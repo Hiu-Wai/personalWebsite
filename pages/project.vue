@@ -43,7 +43,7 @@
                     </div>
                     </div>
                 </div>
-                </div>
+                </div>  
                 <div class="col">
                 <div class="card h-100">
                     <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
