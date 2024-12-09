@@ -4,7 +4,7 @@
         <main class="px-3">
           <h3> HELLO EVERYONE, I AM</h3>
           <h1>CHLOE HO (HO HIU WAI)</h1>
-          <img class="bd-placeholder-img rounded-circle" width="350" height="350" src="images\profile.jpeg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" style = "padding: 30px;"><title></title><rect width="100%" height="100%" fill="#777"></rect></img>
+          <img class="bd-placeholder-img rounded-circle" width="350" height="350" src="images\profile.jpeg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"></rect></img>
           <p class="lead">I'm an undergraduate computer science student who is interested in learning new things.</p>
 <!--           <NuxtLink to="/project">
             <button class="btn btn-primary rounded btn-lg">Learn more -></button>
@@ -13,7 +13,7 @@
           <div class = "row">
             <div class="col-sm">
               <div class="d-flex justify-content-center">
-              <div class="p-5 text-white bg-dark rounded-3 text-center" style = "background-size: cover; width: 75%; height: 75%">
+              <div class="p-5 text-white bg-dark rounded-3 text-center custom-round" style = "background-size: cover; width: 75%; height: 75%">
                 <h3>Contact details</h3>
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
@@ -59,4 +59,4 @@
             height: 100vh; /* Ensure the body covers the full viewport height */
             margin: 0; /* Remove default margins */
   }
-</style>
+  </style>
