@@ -4,7 +4,7 @@
         <main class="px-3">
           <h3> HELLO EVERYONE, I AM</h3>
           <h1>CHLOE HO (HO HIU WAI)</h1>
-          <img class="bd-placeholder-img rounded-circle" width="350" height="350" src="images\profile.jpeg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"></rect></img>
+          <img class="bd-placeholder-img rounded-circle custom-round" src="images\profile.jpeg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"></rect></img>
           <p class="lead">I'm an undergraduate computer science student who is interested in learning new things.</p>
 <!--           <NuxtLink to="/project">
             <button class="btn btn-primary rounded btn-lg">Learn more -></button>
@@ -14,7 +14,11 @@
             <div class="col-sm">
               <div class="d-flex justify-content-center">
               <div class="p-5 text-white bg-dark rounded-3 text-center custom-round" style = "background-size: cover; width: 75%; height: 75%">
-                <h3>Contact details</h3>
+                <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person-lines-fill me-2" viewBox="0 0 16 16">
+                  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                </svg>
+                Contact details</h3>
                 <p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
                     <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"/>
@@ -45,4 +49,12 @@
   .lead{
     font-size: 1.7rem;
   }
+  .custom-round {
+  width: 300px; /* Set your desired width */
+  height: 300px; /* Set your desired height */
+  object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+  border-radius: 50%; /* Ensures the image is circular */
+  overflow: hidden; /* Prevents overflow of the image */
+}
+
   </style>
