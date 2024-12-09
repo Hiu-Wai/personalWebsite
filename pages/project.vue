@@ -1,17 +1,6 @@
 <template>
     <body class="d-flex h-100 text-center text-white custom-bg">
       <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
-        
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <span class="fs-4" style = "color: white">Chloe Ho</span>
-        </a>
-        <ul class="nav col-12 col-lg-auto me-5 mb-2 justify-content-center mb-md-0">
-            <li><NuxtLink to="/"index class="nav-link px-3">Home</NuxtLink></li>
-            <li><NuxtLink to="/project" class="nav-link px-3">Projects</NuxtLink></li>
-        </ul>
-        </header>
-
         <div class="d-flex justify-content-center">
         <div class="p-5 mb-4 rounded-3 text-center bg-2" style = "width: 75%; background-color: #00312F;">
         <div class="container-fluid py-5">
