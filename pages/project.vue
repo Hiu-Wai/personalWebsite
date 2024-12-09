@@ -64,11 +64,16 @@
 
 <style>
     .custom-size{
-        max-width:75%;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
     }
     .card{
         background-color: #D1FFFD;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
     }
     .container{
         display: flex;
