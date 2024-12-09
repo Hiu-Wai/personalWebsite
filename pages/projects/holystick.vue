@@ -98,30 +98,12 @@
   #carouselExampleIndicators{
     padding: 5rem;
   }
-  .custom-bg{
-      background-image: url('C:\\Users\\Chloe\\Desktop\\Coding\\personalWebsite\\images\\background-image.jpg'); /* Path to your image */
-              background-size: cover; /* Make the image cover the whole page */
-              background-repeat: no-repeat; /* Prevent repeating */
-              background-position: center center; /* Center the image */
-              height: 150vh; /* Ensure the body covers the full viewport height */
-              margin: 0; /* Remove default margins */
-    }
-    .image-wrapper{
-      display: inline-block;
-      padding: 10px;
-      background-color: #C7FFED;
-      border-radius: 15px;
-    }
-    .image-wrapper img{
-      border-radius: 10px;
-    }
-    .btn{
-      background-color:#00f6ed;
-      color: #708189;
-    }
-    .btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn{
-      background-color: #7be67a;
-      color: #708189;
-    }  
-  
+  .btn-primary{
+    background-color:#00f6ed;
+    color: #708189;
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+    background-color: #7be67a;
+    color: #708189;
+  }  
   </style>
