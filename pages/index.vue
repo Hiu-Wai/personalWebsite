@@ -6,9 +6,6 @@
           <h1>CHLOE HO (HO HIU WAI)</h1>
           <img class="bd-placeholder-img rounded-circle custom-round" src="images\profile.jpeg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"></rect></img>
           <p class="lead">I'm an undergraduate computer science student who is interested in learning new things.</p>
-<!--           <NuxtLink to="/project">
-            <button class="btn btn-primary rounded btn-lg">Learn more -></button>
-          </NuxtLink> --> 
           <br>
           <div class = "row">
             <div class="col-sm">
