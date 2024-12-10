@@ -71,6 +71,9 @@
               <div class="justify-content-between">
                 <a href="https://fashtrack.netlify.app" class="btn btn-lg btn-primary m-2">Visit project deployment</a>
                 <a href="https://github.com/Hiu-Wai/fashtrack" class="btn btn-lg btn-primary m-2">Visit Github for project</a>
+                <NuxtLink to="/project">
+                        <button type="button" class="btn btn-lg btn-primary m2">Look at other projects</button>
+                </NuxtLink>
               </div>
           </div>
           <div class="col-md-4">
