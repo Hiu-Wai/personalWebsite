@@ -53,6 +53,26 @@
                     </div>
                 </div>
                 </div>
+                <div class="col">
+                <div class="card h-100">
+                    <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
+                            width="100%" height="300" src = "https://ip.lfe.mw.tum.de/sections/moocus.png" role="img" aria-label="Placeholder: Thumbnail" 
+                            preserveAspectRatio="xMidYMid slice" focusable="false" style= "background-color: #00838f">
+                            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+                        </img> 
+
+                    <div class="card-body">
+                    <p class="card-text">Chatter App is a website created whilst doing an online course about HTML, CSS and JavaScript. <br> It mimics the functionality of normal texting apps where users can create new groups and send messages.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        <NuxtLink to="/projects/chatterapp">
+                        <button type="button" class="btn btn-lg btn-outline-secondary learn-more">Learn more</button>
+                        </NuxtLink>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
         </div>
         </div>
     </div>
