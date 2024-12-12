@@ -11,7 +11,9 @@ export default defineNuxtConfig({
   css: [
      'bootstrap/dist/css/bootstrap.min.css'
   ],
-  modules: ['@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/google-fonts',
+  ],
   app:{
     head: {
       script: [
@@ -19,5 +21,5 @@ export default defineNuxtConfig({
           type: 'text/javascript'},
       ],
     },
-  }
+  },
 });

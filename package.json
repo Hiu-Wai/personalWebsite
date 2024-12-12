@@ -13,7 +13,8 @@
     "bootstrap": "^5.3.3",
     "nuxt": "^3.14.1592",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
