@@ -1,6 +1,6 @@
 <template>
     <body class="d-flex h-100 text-center text-white custom-bg">
-      <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
     <div class="d-flex justify-content-center">
     <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-bs-ride="carousel" style = "width: 75%; border-radius: 10px;">
       <div class="carousel-indicators">
@@ -9,40 +9,40 @@
       </div>
       <div class="carousel-inner align-items-center">
         <div class="carousel-item active">
-          <div class = "row">
-            <div class="col-md-7">
-              <h1>Chatter App</h1>
-              <div class = "d-flex justify-content-between align-items-center">
-                <div class = "d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill me-2" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                    </svg>
-                  <span>Personal project</span>
-                </div>
-                <div class = "d-flex align-items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-laptop me-2" viewBox="0 0 16 16">
-                    <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+        <div class = "row">
+          <div class="col-md-7">
+            <h1>Chatter App</h1>
+            <div class = "d-flex justify-content-between align-items-center">
+              <div class = "d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill me-2" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                   </svg>
-                  <span>Website</span>
-                </div>
-                <div class = "d-flex align-items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event me-2" viewBox="0 0 16 16">
-                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
-                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                  </svg>
-                  <span>March 2023</span>
-                </div>
+                <span>Personal project</span>
               </div>
-              <br>
-              <p>Chatter App is a website created whilst learning about HTML, CSS, JavaScript through an online course in MOOC. It aims to mimic the functionality of a messaging app, where the user can create new channels, send messages. However, it currently doesn't allow multi-user usage.
-              </p>
+              <div class = "d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-laptop me-2" viewBox="0 0 16 16">
+                  <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                </svg>
+                <span>Website</span>
+              </div>
+              <div class = "d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event me-2" viewBox="0 0 16 16">
+                  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                <span>March 2023</span>
+              </div>
             </div>
-            <div class="col-md-4">
-              <div class = "image-wrapper">
-                <img src = "https://ip.lfe.mw.tum.de/sections/moocus.png" class = "img-fluid" style = "background-color: #00838f;">
-              </div>
+            <br>
+            <p>Chatter App is a website created whilst learning about HTML, CSS, JavaScript through an online course in MOOC. It aims to mimic the functionality of a messaging app, where the user can create new channels, send messages. However, it currently doesn't allow multi-user usage.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class = "image-wrapper">
+              <img src = "https://ip.lfe.mw.tum.de/sections/moocus.png" class = "img-fluid" style = "background-color: #00838f;">
             </div>
           </div>
+        </div>
         </div>
         <div class="carousel-item">
           <div class = "row">
@@ -67,7 +67,6 @@
                 </svg>
                 <span>Note: Website currently doesn't allow multi-user interactions</span>
                 <div class="justify-content-between">
-                  <!-- <a href="https://holystick.dylankainth.com/" class="btn btn-lg btn-primary m-2">Visit project deployment</a> -->
                   <a href="https://github.com/Hiu-Wai/chatter-app" class="btn btn-lg btn-primary m-2">Visit Github for project</a>
                   <NuxtLink to="/project">
                         <button type="button" class="btn btn-lg btn-primary m2">Look at other projects</button>
@@ -90,10 +89,10 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      </div>
     </div>
-  </div>
-  </div>
-  </body>
+    </div>
+    </body>
   </template>
   <style>
   #carouselExampleIndicators{

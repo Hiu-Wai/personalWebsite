@@ -1,6 +1,6 @@
 <template>
     <body class="d-flex h-100 text-center text-white custom-bg">
-      <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
     <div class="d-flex justify-content-center">
     <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-bs-ride="carousel" style = "width: 75%; border-radius: 10px;">
       <div class="carousel-indicators">
