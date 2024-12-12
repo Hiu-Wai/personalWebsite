@@ -8,7 +8,7 @@
         <p class = "lead my-3">I enjoy coding due to its problem-solving nature and the satisfaction felt afterwards. But I am eager to explore the other different branches of computer science as it is such a big field. Feel free to contact me using the contact details mentioned in the home page!!</p>
       </div>
       <div class="col-lg-6 d-flex justify-content-end">
-          <img src = "images\profile2.jpg" class = "custom-img">
+          <img src = "\public\images\profile2.jpg" class = "custom-img">
       </div>
     </div>
     </div>
