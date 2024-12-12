@@ -13,75 +13,55 @@
             <div class="album py-5">
             <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                <div class="card h-100">
-                    <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
-                        width="100%" height="300" src = "images\fashtrack_logo.png" role="img" aria-label="Placeholder: Thumbnail" 
-                        preserveAspectRatio="xMidYMid slice" focusable="false" style= "background-color: #C7FFED;">
-                        <title>Placeholder</title><rect width="100%" height="100%" fill="#F5F9E9"></rect>
-                    </img>
-
+                <div class="col" v-for="(project,id) in projects":key ="id">
+                    <div class="card h-100">
+                        <h2>{{ project.title }}</h2>
+                        <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
+                        width="100%" height="300" :src = "project.image" role="img" aria-label="Placeholder: Thumbnail" 
+                        preserveAspectRatio="xMidYMid slice" focusable="false" :style="getImageStyle(id)">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#F5F9E9"></rect> 
+                        </img>
                     <div class="card-body">
-                    <p class="card-text">Fash track is a website that was built during Culturehack 2024. <br> It aims to simplify job applications and provide mentorship opportunities</p>
+                    <p class="card-text" v-html="project.shortDescription"></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                        <NuxtLink to="/projects/fashtrack">
+                        <NuxtLink to="'/projects/${id}'">
                         <button type="button" class="btn btn-lg btn-outline-secondary">Learn more</button>
                         </NuxtLink>
                         </div>
                     </div>
                     </div>
-                </div>
-                </div>  
-                <div class="col">
-                <div class="card h-100">
-                    <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
-                            width="100%" height="300" src = "images\holystick_logo.png" role="img" aria-label="Placeholder: Thumbnail" 
-                            preserveAspectRatio="xMidYMid slice" focusable="false" style= "background-color: #C7FFED;">
-                            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
-                        </img> 
-
-                    <div class="card-body">
-                    <p class="card-text">Holystick is a website that was built during UCL AI Hackathon 2024. <br> It aims to provide different AI models to access whether a client is eligible for a loan.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <NuxtLink to="/projects/holystick">
-                        <button type="button" class="btn btn-lg btn-outline-secondary learn-more">Learn more</button>
-                        </NuxtLink>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
-                <div class="card h-100">
-                    <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
-                            width="100%" height="300" src = "https://ip.lfe.mw.tum.de/sections/moocus.png" role="img" aria-label="Placeholder: Thumbnail" 
-                            preserveAspectRatio="xMidYMid slice" focusable="false" style= "background-color: #00838f">
-                            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
-                        </img> 
-
-                    <div class="card-body">
-                    <p class="card-text">Chatter App is a website created whilst doing an online course about HTML, CSS and JavaScript. <br> It mimics the functionality of normal texting apps where users can create new groups and send messages.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <NuxtLink to="/projects/chatterapp">
-                        <button type="button" class="btn btn-lg btn-outline-secondary learn-more">Learn more</button>
-                        </NuxtLink>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
+                </div>   
+            </div>
+            </div>
+            </div>
         </div>
-        </div>
-    </div>
         </main>
 
-      </div>    
+      </div>  
     </body>
 </template>
+<script>
+import { projects } from '~/store/index.js';
 
+export default {
+  data() {
+    return {
+      projects,
+    };
+  },
+  methods: {
+    getImageStyle(id) {
+      // Return a specific background color for the given ID
+      if (id === 'n0erng2887b0v0luu579') {
+        return { backgroundColor: '#00838f' };
+      }
+      // Default background color
+      return { backgroundColor: '#C7FFED' };
+    },
+  },
+};
+</script>
 <style>
     .custom-size{
         width: 100%;
@@ -107,7 +87,7 @@
     background-color: #B2DDF7;
     }   
     .bg-2{
-        background-image: url('C:\\Users\\Chloe\\Desktop\\Coding\\personalWebsite\\images\\background-image2.jpg'); /* Path to your image */
+        background-image: url('C:\\Users\\Chloe\\Desktop\\Coding\\personalWebsite\\public\\images\\background-image2.jpg'); /* Path to your image */
             background-size: cover; /* Make the image cover the whole page */
             background-repeat: no-repeat; /* Prevent repeating */
             background-position: center center; /* Center the image */
