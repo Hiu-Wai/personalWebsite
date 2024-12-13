@@ -13,9 +13,10 @@
             <div class="album py-5">
             <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col" v-for="(project,id) in projects":key ="id">
+                <div class="col" v-for="(project,id) in projects" :key ="id">
                     <div class="card h-100">
                         <h2>{{ project.title }}</h2>
+                        <h5>{{ id }}</h5>
                         <img class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block" 
                         width="100%" height="300" :src = "project.image" role="img" aria-label="Placeholder: Thumbnail" 
                         preserveAspectRatio="xMidYMid slice" focusable="false" :style="getImageStyle(id)">
@@ -25,7 +26,7 @@
                     <p class="card-text" v-html="project.shortDescription"></p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                        <NuxtLink to="'/projects/${id}'">
+                          <NuxtLink :to = "'/projects/' + id">
                         <button type="button" class="btn btn-lg btn-outline-secondary">Learn more</button>
                         </NuxtLink>
                         </div>
