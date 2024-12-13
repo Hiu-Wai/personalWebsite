@@ -34,11 +34,11 @@
                 </div>
               </div>
               <br>
-              <p>{{ project.longDescription }}</p>
+              <p v-html="project.longDescription"></p>
             </div>
             <div class="col-md-4">
               <div class = "image-wrapper">
-                <img src = {{ project.image }} class = "img-fluid">
+                <img :src="project.image" class = "img-fluid">
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
                   <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
                   <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
                 </svg>
-                <span>Techniques used: {{ project.techniques.join(', ') }}</span>
+                <span>Techniques used: {{ project.techniques.join(', ') }}</span>-->
               </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-code me-2" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708"/>
@@ -112,11 +112,15 @@
     }  
   </style>
 
-<script> 
-export default { 
-    async asyncData({ params, store }) {
-         const project = store.getters['getProjectById'](params.id); 
-         return { project }; 
-        } 
-    } 
+<script>
+import { projects } from '~/store/index.js';
+
+export default {
+  async asyncData({ params }) {
+    console.log(params);
+    const project = projects[params.id] || null; // Get project data by ID
+    console.log('Project ID:', params.id);
+    return { project };
+  },
+};
 </script>
