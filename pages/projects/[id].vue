@@ -24,7 +24,7 @@
               aria-label="Slide 2"
             ></button>
           </div>
-          <div class="carousel-inner align-items-center">
+          <div class="carousel-inner align-items-center" v-if="project">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-md-7">
@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="image-wrapper">
-                    <img :src="project.image" class="img-fluid" />
+                    <img :src="project.image" class="img-fluid"/>
                   </div>
                 </div>
               </div>
@@ -169,12 +169,13 @@
                 </div>
                 <div class="col-md-4">
                   <div class="image-wrapper">
-                    <img :src="project.image" class="img-fluid" />
+                    <img :src="project.image" class="img-fluid"/>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div v-else> <p>Project not found.</p> </div>
           <button
             class="carousel-control-prev justify-content-between custom-prev"
             style="padding-left: 30px"
