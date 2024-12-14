@@ -19,7 +19,6 @@
               <div class="col" v-for="(project, id) in projects" :key="id">
                 <div class="card h-100">
                   <h2>{{ project.title }}</h2>
-                  <h5>{{ id }}</h5>
                   <img
                     class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block"
                     width="100%"
@@ -111,7 +110,7 @@ export default {
   background-color: #b2ddf7;
 }
 .bg-2 {
-  background-image: url("C:\\Users\\Chloe\\Desktop\\Coding\\personalWebsite\\public\\images\\background-image2.jpg"); /* Path to your image */
+  background-image: url("/public/images/background-image2.jpg"); /* Path to your image */
   background-size: cover; /* Make the image cover the whole page */
   background-repeat: no-repeat; /* Prevent repeating */
   background-position: center center; /* Center the image */
