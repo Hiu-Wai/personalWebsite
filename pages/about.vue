@@ -87,4 +87,8 @@
 ul {
   color: black;
 }
+.container-fluid{
+  padding-left: 25px;
+  padding-right: 25px;
+}
 </style>
