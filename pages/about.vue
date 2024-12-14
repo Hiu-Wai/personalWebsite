@@ -1,5 +1,6 @@
 <template>
   <body class="d-flex h-100 custom-bg">
+  <div class = "container-fluid">
     <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
       <div class="row">
         <div class="col-lg-6 px-0">
@@ -70,6 +71,7 @@
         </div>
       </div>
     </div>
+  </div>
   </body>
 </template>
 <style>
@@ -84,13 +86,5 @@
 }
 ul {
   color: black;
-}
-.row {
-  display: flex;
-}
-.col-lg-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 </style>
