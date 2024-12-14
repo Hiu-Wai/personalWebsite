@@ -13,6 +13,8 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxtjs/google-fonts',
+    'nuxt3-vuex-module',
+    
   ],
   app:{
     head: {
