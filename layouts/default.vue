@@ -23,7 +23,7 @@
   font-size: 1.5rem;
   }
   .custom-bg{
-    background-image: url('C:\\Users\\Chloe\\Desktop\\Coding\\personalWebsite\\public\\images\\background-image.jpg'); /* Path to your image */
+    background-image: url('/images/background-image.jpg'); /* Path to your image */
             background-size: cover; /* Make the image cover the whole page */
             background-repeat: no-repeat; /* Prevent repeating */
             background-position: center center; /* Center the image */
