@@ -68,14 +68,3 @@ export const state = () => ({
     },
 }
 })
-
-export const projects = state().projects;
-
-export const getters = { 
-    getProject: (state) => { 
-        return state.projects; 
-    },
-    getProjectById: (state) => (id) => { 
-        return state.projects[id]; 
-    }
-};
