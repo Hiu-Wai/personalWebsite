@@ -66,5 +66,14 @@ export const state = () => ({
             }
         ]
     },
+},
+icons:{
+    groups: "bi bi-people-fill",
+    person: "bi bi-person-fill",
+    web: "bi bi-laptop",
+    calendar: "bi bi-calendar-event",
+    language: "bi bi-translate",
+    takeaway: "bi bi-journal-code",
+    note: "bi bi-pencil-square",
 }
-})
+});
