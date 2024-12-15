@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 import Navbar from "~/components/Navbar.vue";
 
 export default {
