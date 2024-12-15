@@ -25,7 +25,6 @@
         </div>
       </div>
     </div>
-    <br />
     <div class="row mb-2">
       <div class="col-md-6">
         <div
