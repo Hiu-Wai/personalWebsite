@@ -50,14 +50,18 @@
                 </div>
                 <div class="col-md-4">
                   <div class="image-wrapper">
-                    <img :src="project.image" class="img-fluid" />
+                    <img
+                      :src="project.image"
+                      class="img-fluid"
+                      :style="{ backgroundColor: getImageStyle }"
+                    />
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                   <h1>{{ project.title }}</h1>
                   <span
                     ><i :class="getIcon('language')" class="me-2"></i>
@@ -80,20 +84,21 @@
                       >
                         {{ button.text }}
                       </a>
-                      <NuxtLink to='/project'>
-                          <button
-                            type="button"
-                            class="btn btn-lg btn-outline-secondary"
-                          >
-                            Look at other projects
-                          </button>
-                        </NuxtLink>
+                      <NuxtLink to="/project">
+                        <button type="button" class="btn btn-lg btn-primary">
+                          Look at other projects
+                        </button>
+                      </NuxtLink>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="image-wrapper">
-                    <img :src="project.image" class="img-fluid" />
+                    <img
+                      :src="project.image"
+                      class="img-fluid"
+                      :style="{ backgroundColor: getImageStyle }"
+                    />
                   </div>
                 </div>
               </div>
@@ -155,8 +160,11 @@ export default {
   },
   computed: {
     icons() {
-      console.log(this.$store.state.icons);
       return this.$store.state.icons;
+    },
+    getImageStyle() {
+      const projectId = this.$route.params.id;
+      return projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED";
     },
   },
   mounted() {
@@ -167,7 +175,6 @@ export default {
   methods: {
     // Fetch the correct Bootstrap icon class
     getIcon(iconKey) {
-      console.log(this.icons[iconKey] + " icon key");
       return this.icons[iconKey] || ""; // Fallback to empty if iconKey doesn't exist
     },
   },
