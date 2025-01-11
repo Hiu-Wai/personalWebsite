@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config 
+import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   googleFonts: {
     families: {
@@ -14,6 +15,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     'nuxt3-vuex-module',
+    '@pinia/nuxt',
     
   ],
   app:{
