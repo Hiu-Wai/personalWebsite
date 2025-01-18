@@ -58,28 +58,25 @@
     </div>
   </body>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      projects: null, // Initialize as null to hold the fetched data
-    };
-  },
-  mounted() {
-    // Access the Vuex store to fetch all projects
-    this.projects = this.$store.state.projects;
-  },
-  methods: {
-    getImageStyle(id) {
+<script setup>
+import { useMainStore } from '~/store/index'; // Import the Pinia store
+import { computed } from 'vue';
+
+// Access the store
+const store = useMainStore();
+
+// Use the `projects` state from the store
+const projects = computed(() => store.projects);
+
+// Optional: Define the method for image styling (if needed)
+function getImageStyle(id) {
       // Return a specific background color for the given ID
       if (id === "n0erng2887b0v0luu579") {
         return { backgroundColor: "#00838f" };
       }
       // Default background color
       return { backgroundColor: "#C7FFED" };
-    },
-  },
-};
+    }
 </script>
 <style>
 .custom-size {
