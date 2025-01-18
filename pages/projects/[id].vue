@@ -55,7 +55,6 @@ function getIcon(iconKey){
               <div class="row">
                 <div class="col-md-7">
                   <h1>{{ project.title }}</h1>
-                  <h1>{{ projectId }}</h1>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
