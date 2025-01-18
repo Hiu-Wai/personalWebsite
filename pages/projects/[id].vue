@@ -176,34 +176,3 @@ function getIcon(iconKey){
   color: #708189;
 }
 </style>
-
-<!-- <script>
-export default {
-  data() {
-    return {
-      project: null,
-    };
-  },
-  computed: {
-    icons() {
-      return this.$store.state.icons;
-    },
-    getImageStyle() {
-      const projectId = this.$route.params.id;
-      return projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED";
-    },
-  },
-  mounted() {
-    // Fetch project data from the Vuex store
-    const projectId = this.$route.params.id;
-    this.project = this.$store.state.projects[projectId];
-  },
-  methods: {
-    // Fetch the correct Bootstrap icon class
-    getIcon(iconKey) {
-      return this.icons[iconKey] || ""; // Fallback to empty if iconKey doesn't exist
-    },
-  },
-};
-</script>
- -->
