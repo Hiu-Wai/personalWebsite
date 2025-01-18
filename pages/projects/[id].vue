@@ -1,3 +1,29 @@
+<script setup>
+import { useRoute } from 'vue-router'; // To access the dynamic route parameter
+import { computed } from 'vue';
+import { useMainStore } from '~/store/index'; // Import the store
+
+// Access the route to get the 'id' parameter
+const route = useRoute();
+const projectId = route.params.id; // Dynamic 'id' from URL
+
+// Access the store
+const store = useMainStore();
+
+// Fetch the project based on the 'id'
+const project = computed(() => store.projects[projectId]);
+const icons = computed(() => store.icons);
+
+function getImageStyle(){
+  //Return specific background colour for the given ID
+  return {
+    backgroundColor: projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED"
+  };
+}
+function getIcon(iconKey){
+  return icons.value[iconKey] || ""; 
+}
+</script>
 <template>
   <body class="d-flex h-100 text-center text-white custom-bg">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
@@ -29,6 +55,7 @@
               <div class="row">
                 <div class="col-md-7">
                   <h1>{{ project.title }}</h1>
+                  <h1>{{ projectId }}</h1>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -53,7 +80,7 @@
                     <img
                       :src="project.image"
                       class="img-fluid"
-                      :style="{ backgroundColor: getImageStyle }"
+                      :style="getImageStyle()"
                     />
                   </div>
                 </div>
@@ -97,7 +124,7 @@
                     <img
                       :src="project.image"
                       class="img-fluid"
-                      :style="{ backgroundColor: getImageStyle }"
+                      :style="getImageStyle()"
                     />
                   </div>
                 </div>
@@ -151,7 +178,7 @@
 }
 </style>
 
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -180,3 +207,4 @@ export default {
   },
 };
 </script>
+ -->
