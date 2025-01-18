@@ -50,16 +50,12 @@ export const state = () => ({
         type: { status: 'Website', icon: 'web' },
         image: 'https://ip.lfe.mw.tum.de/sections/moocus.png',
         timeFrame: 'March 2023',
-        shortDescription: 'Holystick is a website that was built during UCL AI Hackathon 2024. <br> It aims to provide different AI models to access whether a client is eligible for a loan.',
+        shortDescription: 'Chatter App is a website that mimics the functionality of a messaging app. User can create new channels and send new messages.',
         longDescription: 'Chatter App is a website created whilst learning about HTML, CSS, JavaScript through an online course in MOOC. It aims to mimic the functionality of a messaging app, where the user can create new channels, send messages. However, it currently does not allow multi-user usage.',
         techniques: ['HTML', 'CSS', 'JavaScript'],
         takeaway: 'Learnt how to use HTML, CSS and JavaScript',
         note: 'Only a prototype of the final website. Data used is made up.',
         buttons:[
-            {
-                text: 'Visit project deployment',
-                hyperlink: 'https://fashtrack.netlify.app'
-            },
             {
                 text: 'Visit Github for project',
                 hyperlink:'https://github.com/Hiu-Wai/chatter-app' 
