@@ -18,6 +18,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     
   ],
+  plugins:[
+    '~/plugins/pinia.ts',
+  ],
   app:{
     head: {
       script: [
