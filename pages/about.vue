@@ -6,7 +6,7 @@
           <div class="col-lg-6 px-0">
             <h1 class="display-4 fst-italic">A little about me...</h1>
             <p class="lead my-3">
-              I'm Chloe Ho (Ho Hiu Wai) and I am currently a computer science
+              I'm Chloe Ho (Hiu Wai Ho) and I am currently a computer science
               undergraduate at King's College London.
             </p>
             <p class="lead my-3">
@@ -65,6 +65,13 @@
                 <li>Womxn in CS</li>
                 <li>KCL Tech</li>
                 <li>KCL Abacus</li>
+              </ul>
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >Participated events</strong
+              >
+              <ul>
+                <li>KCL CultureHack</li>
+                <li>UCL Holistic AI Hackathon</li>
               </ul>
             </div>
           </div>
