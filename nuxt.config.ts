@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Public Sans': true,
-      'Montserrat' : true
+      'Montserrat' : true,
+      'PT Sans': true
     }
   },
   devtools: { enabled: true },

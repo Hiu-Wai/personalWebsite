@@ -160,6 +160,7 @@ function getIcon(iconKey){
 <style>
 #carouselExampleIndicators {
   padding: 5rem;
+  min-height: 500px;
 }
 
 .btn-primary {

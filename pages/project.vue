@@ -18,7 +18,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col" v-for="(project, id) in projects" :key="id">
                 <div class="card h-100">
-                  <h2>{{ project.title }}</h2>
+                  <h2 class = "text-uppercase">{{ project.title }}</h2>
                   <img
                     class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block"
                     width="100%"
@@ -112,5 +112,10 @@ function getImageStyle(id) {
   background-repeat: no-repeat; /* Prevent repeating */
   background-position: center center; /* Center the image */
   margin: 0; /* Remove default margins */
+}
+
+h2{
+  font-family: 'PT Sans';
+  font-style: italic !important;
 }
 </style>

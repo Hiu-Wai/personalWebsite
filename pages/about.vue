@@ -28,7 +28,7 @@
       <div class="row mb-2">
         <div class="col-md-6">
           <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
+            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis"
@@ -48,13 +48,14 @@
                 <li>Gold in Senior Maths Challenge 2023</li>
                 <li>Gold in Chemistry Olympiad 2024</li>
                 <li>Distinction in UK Bebras Challenge 2024</li>
+                <li>Shortlisted in UCL Minerva's Hack 2025</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
+            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis"
@@ -70,8 +71,10 @@
                 >Participated events</strong
               >
               <ul>
-                <li>KCL CultureHack</li>
-                <li>UCL Holistic AI Hackathon</li>
+                <li>KCL CultureHack 2024</li>
+                <li>UCL Holistic AI Hackathon 2024</li>
+                <li>KCL HackTheLion 2025</li>
+                <li>UCL Minerva's Hack 2025</li>
               </ul>
             </div>
           </div>

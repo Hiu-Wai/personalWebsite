@@ -60,6 +60,10 @@ export const useMainStore = defineStore('projectStore', {
             note: 'Only a prototype of the final website. Data used is made up.',
             buttons:[
                 {
+                    text: 'Visit project deployment',
+                    hyperlink: "https://quackquackchat.netlify.app/"
+                },
+                {
                     text: 'Visit Github for project',
                     hyperlink:'https://github.com/Hiu-Wai/chatter-app' 
                 }
