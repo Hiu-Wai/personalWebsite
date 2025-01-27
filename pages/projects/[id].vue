@@ -60,16 +60,16 @@ function getIcon(iconKey) {
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="d-flex align-items-center">
-                      <i :class="getIcon(project.people.icon)" class="me-2"></i>
-                      <span>{{ project.people.status }}</span>
+                      <i :class="getIcon(project.people.icon), fa-sm" class="me-2"></i>
+                      <span class = "ml-2 ml-md-3 ml-lg-4">{{ project.people.status }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <i :class="getIcon(project.type.icon)" class="me-2"></i>
-                      <span>{{ project.type.status }}</span>
+                      <i :class="getIcon(project.type.icon), fa-sm" class="me-2"></i>
+                      <span class = "ml-2 ml-md-3 ml-lg-4">{{ project.type.status }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <i :class="getIcon('calendar')" class="me-2"></i>
-                      <span>{{ project.timeFrame }}</span>
+                      <i :class="getIcon('calendar'), fa-sm" class="me-2"></i>
+                      <span class = "ml-2 ml-md-3 ml-lg-4">{{ project.timeFrame }}</span>
                     </div>
                   </div>
                   <br />
@@ -91,15 +91,15 @@ function getIcon(iconKey) {
                 <div class="col-md-8">
                   <h1>{{ project.title }}</h1>
                   <span
-                    ><i :class="getIcon('language')" class="me-2"></i>
+                    ><i :class="getIcon('language'), fa-sm" class="me-2"></i>
                     Techniques used:
                     {{ project.techniques.join(", ") }}</span
                   >
                   <br />
-                  <i :class="getIcon('takeaway')" class="me-2"></i>
+                  <i :class="getIcon('takeaway'), fa-sm" class="me-2"></i>
                   <span>Takeaways: {{ project.takeaway }}</span>
                   <br />
-                  <i :class="getIcon('note')" class="me-2"></i>
+                  <i :class="getIcon('note'), fa-sm" class="me-2"></i>
                   <span>Note: {{ project.note }}</span>
                   <div class="justify-content-between">
                     <div class="button-group mt-4">
@@ -123,7 +123,7 @@ function getIcon(iconKey) {
                   <div class="image-wrapper">
                     <img
                       :src="project.image"
-                      class="img-fluid"
+                      class="img-fluid project-image"
                       :style="getImageStyle()"
                     />
                   </div>
@@ -177,4 +177,36 @@ function getIcon(iconKey) {
   background-color: #7be67a;
   color: #708189;
 }
+
+/* @media (max-width: 600px) {
+  .carousel-item {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .carousel-item {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .carousel-item {
+    font-size: 22px;
+    padding: 30px;
+  }
+} */
+.project-image{
+  height: 40vh;
+  width: 40vw;
+}
+.carousel-control-next {
+      z-index: 2;
+      width: 10%; /* Ensure the controls are visible next to the image */
+    }
+.carousel-control-next {
+      right: -50px; /* Adjust the value to place the control next to the image */
+    }
 </style>
