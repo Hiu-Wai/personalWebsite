@@ -3,6 +3,28 @@ import { defineStore } from 'pinia'
 export const useMainStore = defineStore('projectStore', {
   state: () => ({
     projects: {
+        '9op11u4bzzqgzfnxlbcd':{
+            title: 'Anagolay',
+            people: { status: 'Group Project', icon: 'groups' },
+            type: { status: 'Website', icon: 'web' },
+            image: '/images/anagolay.png',
+            timeFrame: 'Jan 2025',
+            shortDescription: 'Anagolay means the goddness of lost items. The website aims to reunite university students with their lost belongings.',
+            longDescription: 'Anagolay is a lost and found website designed to help university students report and recover lost or found items efficiently and securely. <br> Users can fill out a form to report lost/ found items and once logged in. The user can track their past submissions, making it easier to follow up or resolve ongoing report.<br> A NLTK driven algorithm is used to match reported lost items with found items based on submitted details, notifying users of potential matches.',
+            techniques: ['React', 'Firebase', 'Flask', 'AI'],
+            takeaway: 'Learnt how to use React for the first time',
+            note: 'Project is incomplete and subjected to further development.',
+            buttons:[
+                {
+                    text: 'Visit project deployment',
+                    hyperlink: 'https://anagolay.netlify.app/'
+                },
+                {
+                    text: 'Visit Github for project',
+                    hyperlink:'https://github.com/Hiu-Wai/lost-and-found' 
+                }
+            ]
+            },
     '41t71u4bzzqgzfnxlxnq':{
         title: 'HolyStick',
         people: { status: 'Group Project', icon: 'groups' },
@@ -12,7 +34,7 @@ export const useMainStore = defineStore('projectStore', {
         shortDescription: 'Holystick is a website that was built during UCL AI Hackathon 2024. <br> It aims to provide different AI models to access whether a client is eligible for a loan.',
         longDescription: 'Holystic is a website built for the UCL AI Hackathon 2024 with Holistic AI. The website aims to provide different AI models for the client to decide whether they can take a loan. It also states the benefits and disadvantages of each AI model so that the user is more aware of the impacts for each.',
         techniques: ['Python', 'flask', 'Vue', 'Bootstrap', 'AI', 'ML'],
-        takeaway: 'Learnt how to use flask for the first type',
+        takeaway: 'Learnt how to use flask for the first time',
         note: 'Data used for this website is based on database provided, might not reflect reality.',
         buttons:[
             {
