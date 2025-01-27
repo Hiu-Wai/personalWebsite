@@ -1,7 +1,7 @@
 <script setup>
-import { useRoute } from 'vue-router'; // To access the dynamic route parameter
-import { computed } from 'vue';
-import { useMainStore } from '~/store/index'; // Import the store
+import { useRoute } from "vue-router"; // To access the dynamic route parameter
+import { computed } from "vue";
+import { useMainStore } from "~/store/index"; // Import the store
 
 // Access the route to get the 'id' parameter
 const route = useRoute();
@@ -14,14 +14,15 @@ const store = useMainStore();
 const project = computed(() => store.projects[projectId]);
 const icons = computed(() => store.icons);
 
-function getImageStyle(){
+function getImageStyle() {
   //Return specific background colour for the given ID
   return {
-    backgroundColor: projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED"
+    backgroundColor:
+      projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED",
   };
 }
-function getIcon(iconKey){
-  return icons.value[iconKey] || ""; 
+function getIcon(iconKey) {
+  return icons.value[iconKey] || "";
 }
 </script>
 <template>
@@ -160,7 +161,7 @@ function getIcon(iconKey){
 <style>
 #carouselExampleIndicators {
   padding: 5rem;
-  min-height: 500px;
+  min-height: 55vh;
 }
 
 .btn-primary {

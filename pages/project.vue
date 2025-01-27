@@ -18,11 +18,10 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col" v-for="(project, id) in projects" :key="id">
                 <div class="card h-100">
-                  <h2 class = "text-uppercase">{{ project.title }}</h2>
+                  <h2 class="text-uppercase">{{ project.title }}</h2>
                   <img
-                    class="bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block"
+                    class="project-image bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block"
                     width="100%"
-                    height="300"
                     :src="project.image"
                     role="img"
                     aria-label="Placeholder: Thumbnail"
@@ -32,21 +31,19 @@
                   />
                   <title>Placeholder</title
                   ><rect width="100%" height="100%" fill="#F5F9E9"></rect>
-                  <div class="card-body">
+                  <div class="card-body d-flex flex-column">
                     <p class="card-text" v-html="project.shortDescription"></p>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="btn-group mt-auto d-flex justify-content-center"
                     >
-                      <div class="btn-group">
-                        <NuxtLink :to="'/projects/' + id">
-                          <button
-                            type="button"
-                            class="btn btn-lg btn-outline-secondary"
-                          >
-                            Learn more
-                          </button>
-                        </NuxtLink>
-                      </div>
+                      <NuxtLink :to="'/projects/' + id">
+                        <button
+                          type="button"
+                          class="btn btn-lg btn-outline-secondary"
+                        >
+                          Learn more
+                        </button>
+                      </NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -59,8 +56,8 @@
   </body>
 </template>
 <script setup>
-import { useMainStore } from '~/store/index'; // Import the Pinia store
-import { computed } from 'vue';
+import { useMainStore } from "~/store/index"; // Import the Pinia store
+import { computed } from "vue";
 
 // Access the store
 const store = useMainStore();
@@ -70,13 +67,13 @@ const projects = computed(() => store.projects);
 
 // Optional: Define the method for image styling (if needed)
 function getImageStyle(id) {
-      // Return a specific background color for the given ID
-      if (id === "n0erng2887b0v0luu579") {
-        return { backgroundColor: "#00838f" };
-      }
-      // Default background color
-      return { backgroundColor: "#C7FFED" };
-    }
+  // Return a specific background color for the given ID
+  if (id === "n0erng2887b0v0luu579") {
+    return { backgroundColor: "#00838f" };
+  }
+  // Default background color
+  return { backgroundColor: "#C7FFED" };
+}
 </script>
 <style>
 .custom-size {
@@ -114,8 +111,13 @@ function getImageStyle(id) {
   margin: 0; /* Remove default margins */
 }
 
-h2{
-  font-family: 'PT Sans';
+h2 {
+  font-family: "PT Sans";
   font-style: italic !important;
+}
+.project-image {
+  height: 33vh;
+  width: auto;
+  overflow: hidden;
 }
 </style>

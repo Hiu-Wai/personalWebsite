@@ -30,6 +30,7 @@ body {
   background-size: cover; /* Make the image cover the whole page */
   background-repeat: no-repeat; /* Prevent repeating */
   background-position: center center; /* Center the image */
+  background-attachment: fixed;
   height: 150vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
 }
