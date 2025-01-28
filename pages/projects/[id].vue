@@ -134,7 +134,6 @@ function getIcon(iconKey) {
           <div v-else><p>Project not found.</p></div>
           <button
             class="carousel-control-prev justify-content-between custom-prev"
-            style="padding-left: 30px"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
@@ -144,7 +143,6 @@ function getIcon(iconKey) {
           </button>
           <button
             class="carousel-control-next justify-content-between custom-next"
-            style="right: -80px"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
@@ -224,11 +222,11 @@ function getIcon(iconKey) {
   }
 
 }
-/* .carousel-control-next {
-      z-index: 2;
-      width: 1033%; /* Ensure the controls are visible next to the image 
-    }
-.carousel-control-next {
-      right: -50px; /* Adjust the value to place the control next to the image 
-    } */
+.carousel-control-next{
+  padding-right: -50px;
+  padding-left: 30px;
+}
+.carousel-control-prev{
+  padding-left: 50px;
+}
 </style>
