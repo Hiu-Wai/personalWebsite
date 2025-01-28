@@ -33,7 +33,7 @@ function getIcon(iconKey) {
           id="carouselExampleIndicators"
           class="carousel slide bg-dark"
           data-bs-ride="carousel"
-          style="width: 75%; border-radius: 10px"
+          style="border-radius: 10px"
         >
           <div class="carousel-indicators">
             <button
@@ -79,7 +79,7 @@ function getIcon(iconKey) {
                   <div class="image-wrapper">
                     <img
                       :src="project.image"
-                      class="img-fluid"
+                      class="img-fluid project-image"
                       :style="getImageStyle()"
                     />
                   </div>
@@ -88,7 +88,7 @@ function getIcon(iconKey) {
             </div>
             <div class="carousel-item">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                   <h1>{{ project.title }}</h1>
                   <span
                     ><i :class="getIcon('language'), fa-sm" class="me-2"></i>
@@ -107,12 +107,12 @@ function getIcon(iconKey) {
                         v-for="button in project.buttons"
                         :key="button.text"
                         :href="button.hyperlink"
-                        class="btn btn-lg btn-primary m-2"
+                        class="btn btn-lg btn-primary m-2 project-button"
                       >
                         {{ button.text }}
                       </a>
                       <NuxtLink to="/project">
-                        <button type="button" class="btn btn-lg btn-primary">
+                        <button type="button" class="btn btn-lg btn-primary project-button">
                           Look at other projects
                         </button>
                       </NuxtLink>
@@ -161,7 +161,14 @@ function getIcon(iconKey) {
 <style>
 #carouselExampleIndicators {
   padding: 5rem;
-  min-height: 55vh;
+  min-height: 60vh;
+  margin:auto; 
+  width: 80vw;
+}
+.project-image{
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 
 .btn-primary {
@@ -178,35 +185,50 @@ function getIcon(iconKey) {
   color: #708189;
 }
 
-/* @media (max-width: 600px) {
-  .carousel-item {
-    font-size: 14px;
-    padding: 10px;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .carousel-item, .project-button{
+    font-size:9px;
   }
 }
 
-@media (min-width: 601px) and (max-width: 1200px) {
-  .carousel-item {
-    font-size: 18px;
-    padding: 20px;
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .carousel-item, .project-button{
+    font-size:15px;
   }
+
 }
 
-@media (min-width: 1201px) {
-  .carousel-item {
-    font-size: 22px;
-    padding: 30px;
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .carousel-item, .project-button{
+    font-size:16px;
   }
-} */
-.project-image{
-  height: 40vh;
-  width: 40vw;
+
 }
-.carousel-control-next {
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .carousel-item, .project-button{
+    font-size:18px;
+  }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  .carousel-item, .project-button{
+    font-size:24px;
+  }
+
+}
+/* .carousel-control-next {
       z-index: 2;
-      width: 10%; /* Ensure the controls are visible next to the image */
+      width: 1033%; /* Ensure the controls are visible next to the image 
     }
 .carousel-control-next {
-      right: -50px; /* Adjust the value to place the control next to the image */
-    }
+      right: -50px; /* Adjust the value to place the control next to the image 
+    } */
 </style>
