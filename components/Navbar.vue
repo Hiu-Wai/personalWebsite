@@ -4,9 +4,9 @@
   >
     <a
       href="/"
-      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+      class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none"
     >
-      <span class="fs-2" style="color: white">Chloe Ho</span>
+      <span class="name fs-2" style="color: white">Chloe Ho</span>
     </a>
     <ul class="nav col-12 col-lg-auto me-5 mb-2 justify-content-center mb-md-0">
       <li><NuxtLink to="/" class="nav-link px-3">Home</NuxtLink></li>
