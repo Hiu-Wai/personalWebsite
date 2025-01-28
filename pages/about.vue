@@ -85,10 +85,19 @@
 </template>
 <style>
 .custom-img {
-  height: 100%;
+/*   height: 100%; */
+  height: auto;
   width: 350px;
   object-fit: contain;
   overflow: hidden;
+}
+@media (max-width: 992px) {
+  .custom-img{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
 }
 .h3 {
   color: black;
