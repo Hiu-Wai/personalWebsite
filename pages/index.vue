@@ -12,17 +12,16 @@
           preserveAspectRatio="xMidYMid slice"
           focusable="false"
         /><title></title><rect width="100%" height="100%" fill="#777"></rect>
-        <p class="lead">
+        <h3>
           I'm an undergraduate computer science student who is interested in
           learning new things.
-        </p>
+        </h3>
         <br />
         <div class="row">
           <div class="col-sm">
             <div class="d-flex justify-content-center">
               <div
-                class="p-5 text-white bg-dark rounded-3 text-center custom-round"
-                style="background-size: cover; width: 75%; height: 75%"
+                class="p-5 text-white bg-dark rounded-3 text-center custom-round contact-details"
               >
                 <h2>
                   <svg
@@ -121,14 +120,16 @@
 </template>
 
 <style>
-.lead {
-  font-size: 1.7rem;
-}
 .custom-round {
   width: 300px; /* Set your desired width */
   height: 300px; /* Set your desired height */
   object-fit: cover; /* Ensures the image covers the dimensions without distortion */
   border-radius: 50%; /* Ensures the image is circular */
   overflow: hidden; /* Prevents overflow of the image */
+}
+.contact-details{
+  background-size: cover; 
+  width: 70vw;
+  height: auto;
 }
 </style>
