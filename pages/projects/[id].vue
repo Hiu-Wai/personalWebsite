@@ -60,16 +60,31 @@ function getIcon(iconKey) {
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="d-flex align-items-center">
-                      <i :class="getIcon(project.people.icon), fa-sm" class="me-2"></i>
-                      <span class = "ml-2 ml-md-3 ml-lg-4">{{ project.people.status }}</span>
+                      <i
+                        :class="(getIcon(project.people.icon), fa - sm)"
+                        class="me-2"
+                      ></i>
+                      <span class="ml-2 ml-md-3 ml-lg-4">{{
+                        project.people.status
+                      }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <i :class="getIcon(project.type.icon), fa-sm" class="me-2"></i>
-                      <span class = "ml-2 ml-md-3 ml-lg-4">{{ project.type.status }}</span>
+                      <i
+                        :class="(getIcon(project.type.icon), fa - sm)"
+                        class="me-2"
+                      ></i>
+                      <span class="ml-2 ml-md-3 ml-lg-4">{{
+                        project.type.status
+                      }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <i :class="getIcon('calendar'), fa-sm" class="me-2"></i>
-                      <span class = "ml-2 ml-md-3 ml-lg-4">{{ project.timeFrame }}</span>
+                      <i
+                        :class="(getIcon('calendar'), fa - sm)"
+                        class="me-2"
+                      ></i>
+                      <span class="ml-2 ml-md-3 ml-lg-4">{{
+                        project.timeFrame
+                      }}</span>
                     </div>
                   </div>
                   <br />
@@ -91,15 +106,18 @@ function getIcon(iconKey) {
                 <div class="col-md-7">
                   <h1>{{ project.title }}</h1>
                   <span
-                    ><i :class="getIcon('language'), fa-sm" class="me-2"></i>
+                    ><i
+                      :class="(getIcon('language'), fa - sm)"
+                      class="me-2"
+                    ></i>
                     Techniques used:
                     {{ project.techniques.join(", ") }}</span
                   >
                   <br />
-                  <i :class="getIcon('takeaway'), fa-sm" class="me-2"></i>
+                  <i :class="(getIcon('takeaway'), fa - sm)" class="me-2"></i>
                   <span>Takeaways: {{ project.takeaway }}</span>
                   <br />
-                  <i :class="getIcon('note'), fa-sm" class="me-2"></i>
+                  <i :class="(getIcon('note'), fa - sm)" class="me-2"></i>
                   <span>Note: {{ project.note }}</span>
                   <div class="justify-content-between">
                     <div class="button-group mt-4">
@@ -112,7 +130,10 @@ function getIcon(iconKey) {
                         {{ button.text }}
                       </a>
                       <NuxtLink to="/project">
-                        <button type="button" class="btn btn-lg btn-primary project-button">
+                        <button
+                          type="button"
+                          class="btn btn-lg btn-primary project-button"
+                        >
                           Look at other projects
                         </button>
                       </NuxtLink>
@@ -160,26 +181,25 @@ function getIcon(iconKey) {
 #carouselExampleIndicators {
   padding: 5rem;
   min-height: 60vh;
-  margin:auto; 
+  margin: auto;
   width: 80vw;
 }
 
 .centered-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .centered-content .text-container {
   text-align: center;
 }
- .centered-content .image-container img {
+.centered-content .image-container img {
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: contain;
 }
- */
-.btn-primary {
+*/ .btn-primary {
   background-color: #00f6ed;
   color: #708189;
 }
@@ -189,55 +209,55 @@ function getIcon(iconKey) {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #7be67a;
+  background-color: #bad7f2;
   color: #708189;
 }
 
-
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  .carousel-item, .project-button{
-    font-size:9px;
+  .carousel-item,
+  .project-button {
+    font-size: 9px;
   }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  .carousel-item, .project-button{
-    font-size:15px;
+  .carousel-item,
+  .project-button {
+    font-size: 15px;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  .carousel-item, .project-button{
-    font-size:16px;
+  .carousel-item,
+  .project-button {
+    font-size: 16px;
     margin-bottom: 20px;
   }
 }
 
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-  .carousel-item, .project-button{
-    font-size:18px;
+  .carousel-item,
+  .project-button {
+    font-size: 18px;
   }
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-  .carousel-item, .project-button{
-    font-size:24px;
+  .carousel-item,
+  .project-button {
+    font-size: 24px;
   }
-
 }
-.carousel-control-next{
+.carousel-control-next {
   padding-right: -50px;
   padding-left: 100px;
 }
-.carousel-control-prev{
+.carousel-control-prev {
   padding-left: 50px;
 }
 </style>
