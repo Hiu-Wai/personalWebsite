@@ -5,7 +5,7 @@
         <h3>HELLO EVERYONE, I AM</h3>
         <h1>CHLOE HO (HIU WAI HO)</h1>
         <img
-          class="bd-placeholder-img rounded-circle custom-round"
+          class="bd-placeholder-img rounded-circle profile-pic"
           src="public\images\profile.jpeg"
           role="img"
           aria-label="Placeholder: 140x140"
@@ -120,13 +120,44 @@
 </template>
 
 <style>
-.custom-round {
+.profile-pic {
   width: 300px; /* Set your desired width */
   height: 300px; /* Set your desired height */
   object-fit: cover; /* Ensures the image covers the dimensions without distortion */
   border-radius: 50%; /* Ensures the image is circular */
   overflow: hidden; /* Prevents overflow of the image */
 }
+@media (max-width: 576px) {
+  .profile-pic{
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    overflow: hidden; 
+  }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .profile-pic{
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    overflow: hidden; 
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .profile-pic{
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    overflow: hidden; 
+  }
+}
+
 .contact-details{
   background-size: cover; 
   width: 70vw;
