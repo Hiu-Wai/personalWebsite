@@ -5,19 +5,19 @@
         <div class="row">
           <div class="col-lg-6 px-0">
             <h1 class="display-4 fst-italic">A little about me...</h1>
-            <div class = "description">
-            <p class = "my-3">
-              I'm Chloe Ho (Hiu Wai Ho) and I am currently a computer science
-              undergraduate at King's College London.
-            </p>
-            <p class = "my-3">
-              I enjoy coding due to its problem-solving nature and the
-              satisfaction felt afterwards. But I am eager to explore the other
-              different branches of computer science as it is such a big field.
-              Feel free to contact me using the contact details mentioned in the
-              home page!!
-            </p>
-          </div>
+            <div class="description">
+              <p class="my-3">
+                I'm Chloe Ho (Hiu Wai Ho) and I am currently a computer science
+                undergraduate at King's College London.
+              </p>
+              <p class="my-3">
+                I enjoy coding due to its problem-solving nature and the
+                satisfaction felt afterwards. But I am eager to explore the
+                other different branches of computer science as it is such a big
+                field. Feel free to contact me using the contact details
+                mentioned in the home page!!
+              </p>
+            </div>
           </div>
           <div class="col-lg-6 d-flex justify-content-end">
             <img
@@ -87,27 +87,27 @@
 </template>
 <style>
 .custom-img {
-/*   height: 100%; */
+  /*   height: 100%; */
   height: auto;
   width: 350px;
   object-fit: contain;
   overflow: hidden;
 }
 @media (max-width: 576px) {
-  .custom-img{
+  .custom-img {
     width: 200px;
   }
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  .custom-img{
-    width: 250px;   
+  .custom-img {
+    width: 250px;
   }
 }
 @media (max-width: 992px) {
-  .custom-img{
-    display:block;
-    margin-left:auto;
+  .custom-img {
+    display: block;
+    margin-left: auto;
     margin-right: auto;
     height: auto;
     width: 300px;
@@ -125,7 +125,7 @@ ul {
   padding-left: 25px;
   padding-right: 25px;
 }
-.description{
+.description {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -128,38 +128,38 @@
   overflow: hidden; /* Prevents overflow of the image */
 }
 @media (max-width: 576px) {
-  .profile-pic{
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-    overflow: hidden; 
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  .profile-pic{
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-    overflow: hidden; 
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  .profile-pic{
-    width: 250px; 
-    height: 250px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-    overflow: hidden; 
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
 
-.contact-details{
-  background-size: cover; 
+.contact-details {
+  background-size: cover;
   width: 70vw;
   height: auto;
 }
