@@ -53,8 +53,8 @@ function getIcon(iconKey) {
           </div>
           <div class="carousel-inner align-items-center" v-if="project">
             <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-7">
+              <div class="row centered-content">
+                <div class="col-md-7 text-container">
                   <h1>{{ project.title }}</h1>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -75,11 +75,11 @@ function getIcon(iconKey) {
                   <br />
                   <p v-html="project.longDescription"></p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                   <div class="image-wrapper">
                     <img
                       :src="project.image"
-                      class="img-fluid project-image"
+                      class="img-fluid project-image image-container"
                       :style="getImageStyle()"
                     />
                   </div>
@@ -87,7 +87,7 @@ function getIcon(iconKey) {
               </div>
             </div>
             <div class="carousel-item">
-              <div class="row">
+              <div class="row centered-content">
                 <div class="col-md-7">
                   <h1>{{ project.title }}</h1>
                   <span
@@ -119,7 +119,7 @@ function getIcon(iconKey) {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                   <div class="image-wrapper">
                     <img
                       :src="project.image"
@@ -163,12 +163,22 @@ function getIcon(iconKey) {
   margin:auto; 
   width: 80vw;
 }
-.project-image{
-  width: auto;
-  height: auto;
-  object-fit: cover;
-}
 
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.centered-content .text-container {
+  text-align: center;
+}
+ .centered-content .image-container img {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+}
+ */
 .btn-primary {
   background-color: #00f6ed;
   color: #708189;
@@ -203,9 +213,10 @@ function getIcon(iconKey) {
 @media (max-width: 992px) {
   .carousel-item, .project-button{
     font-size:16px;
+    margin-bottom: 20px;
   }
-
 }
+
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
@@ -224,7 +235,7 @@ function getIcon(iconKey) {
 }
 .carousel-control-next{
   padding-right: -50px;
-  padding-left: 30px;
+  padding-left: 70px;
 }
 .carousel-control-prev{
   padding-left: 50px;
