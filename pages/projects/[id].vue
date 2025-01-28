@@ -235,7 +235,7 @@ function getIcon(iconKey) {
 }
 .carousel-control-next{
   padding-right: -50px;
-  padding-left: 70px;
+  padding-left: 100px;
 }
 .carousel-control-prev{
   padding-left: 50px;
