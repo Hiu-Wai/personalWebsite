@@ -199,7 +199,7 @@ function getIcon(iconKey) {
   height: auto;
   object-fit: contain;
 }
-*/ .btn-primary {
+.btn-primary {
   background-color: #00f6ed;
   color: #708189;
 }
