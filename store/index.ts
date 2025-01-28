@@ -10,7 +10,7 @@ export const useMainStore = defineStore('projectStore', {
             image: '/images/anagolay.png',
             timeFrame: 'Jan 2025',
             shortDescription: 'Anagolay means the goddness of lost items. The website aims to reunite university students with their lost belongings.',
-            longDescription: 'Anagolay is a lost and found website designed to help university students report and recover lost or found items efficiently and securely. <br> Users can fill out a form to report lost/ found items and once logged in. The user can track their past submissions, making it easier to follow up or resolve ongoing report.<br> A NLTK driven algorithm is used to match reported lost items with found items based on submitted details, notifying users of potential matches.',
+            longDescription: 'Anagolay is a lost and found website designed to help university students report and recover lost or found items efficiently and securely. <br> Users can fill out a form to report lost/ found items and once logged in. The user can track their past submissions, making it easier to follow up or resolve ongoing report.<br> A NLTK driven algorithm is used to match reported lost items with found items based on submitted details.',
             techniques: ['React', 'Firebase', 'Flask', 'AI'],
             takeaway: 'Learnt how to use React for the first time',
             note: 'Project is incomplete and subjected to further development.',
