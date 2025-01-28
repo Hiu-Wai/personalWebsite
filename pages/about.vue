@@ -5,6 +5,7 @@
         <div class="row">
           <div class="col-lg-6 px-0">
             <h1 class="display-4 fst-italic">A little about me...</h1>
+            <div class = "description">
             <p class = "my-3">
               I'm Chloe Ho (Hiu Wai Ho) and I am currently a computer science
               undergraduate at King's College London.
@@ -16,6 +17,7 @@
               Feel free to contact me using the contact details mentioned in the
               home page!!
             </p>
+          </div>
           </div>
           <div class="col-lg-6 d-flex justify-content-end">
             <img
@@ -91,13 +93,27 @@
   object-fit: contain;
   overflow: hidden;
 }
+@media (max-width: 576px) {
+  .custom-img{
+    width: 200px;
+  }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .custom-img{
+    width: 250px;   
+  }
+}
 @media (max-width: 992px) {
   .custom-img{
     display:block;
     margin-left:auto;
     margin-right: auto;
+    height: auto;
+    width: 300px;
+    object-fit: contain;
+    overflow: hidden;
   }
-
 }
 .h3 {
   color: black;
@@ -108,5 +124,11 @@ ul {
 .container-fluid {
   padding-left: 25px;
   padding-right: 25px;
+}
+.description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 </style>
