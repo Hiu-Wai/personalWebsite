@@ -22,7 +22,7 @@
 
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container-fluid">
         <a href="/" class="navbar-brand text-white fs-2">Chloe Ho</a>
         <button
