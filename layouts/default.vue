@@ -68,9 +68,9 @@ body {
   height: 100vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
 
-  min-height:100%;    
+/*   min-height:100%;    
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 .btn {
   background-color: #00f6ed;
