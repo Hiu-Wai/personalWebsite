@@ -67,10 +67,8 @@ body {
   background-attachment: fixed;
   height: 100vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
-
-/*   min-height:100%;    
-  padding-top: 20px;
-  padding-bottom: 20px; */
+  display:flex;
+  flex-direction: column;
 }
 header{
   width: 100%;
