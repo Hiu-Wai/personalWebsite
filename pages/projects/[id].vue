@@ -132,7 +132,7 @@ function getIcon(iconKey) {
                       <NuxtLink to="/project">
                         <button
                           type="button"
-                          class="btn btn-lg btn-primary project-button"
+                          class="btn btn-lg btn-primary m-2 project-button"
                         >
                           Look at other projects
                         </button>
