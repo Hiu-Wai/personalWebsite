@@ -57,29 +57,29 @@ function getIcon(iconKey) {
                 <div class="col-md-7 text-container">
                   <h1>{{ project.title }}</h1>
                   <div
-                    class="d-flex justify-content-between align-items-center"
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center brief-description"
                   >
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center mb-2 mb-md-0">
                       <i
-                        :class="(getIcon(project.people.icon), fa - sm)"
+                        :class="(getIcon(project.people.icon))"
                         class="me-2"
                       ></i>
                       <span class="ml-2 ml-md-3 ml-lg-4">{{
                         project.people.status
                       }}</span>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center mb-2 mb-md-0">
                       <i
-                        :class="(getIcon(project.type.icon), fa - sm)"
+                        :class="(getIcon(project.type.icon))"
                         class="me-2"
                       ></i>
                       <span class="ml-2 ml-md-3 ml-lg-4">{{
                         project.type.status
                       }}</span>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center mb-2 mb-md-0">
                       <i
-                        :class="(getIcon('calendar'), fa - sm)"
+                        :class="(getIcon('calendar'))"
                         class="me-2"
                       ></i>
                       <span class="ml-2 ml-md-3 ml-lg-4">{{
