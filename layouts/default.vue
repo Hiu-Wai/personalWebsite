@@ -66,7 +66,7 @@ export default {
   background-repeat: no-repeat; /* Prevent repeating */
   background-position: center center; /* Center the image */
   background-attachment: fixed;
-  height: 100vh; /* Ensure the body covers the full viewport height */
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
   display: flex;
   flex-direction: column;
