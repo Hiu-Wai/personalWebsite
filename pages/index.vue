@@ -128,6 +128,11 @@
   overflow: hidden; /* Prevents overflow of the image */
 }
 @media (max-width: 576px) {
+  .contact-details {
+    background-size: cover;
+    width: auto;
+    height: auto;
+  }
   .profile-pic {
     width: 150px;
     height: 150px;
