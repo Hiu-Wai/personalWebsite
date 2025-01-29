@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div class="row mb-2">
+      <div class="row mb-2 about">
         <div class="col-md-6">
           <div
             class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
@@ -115,17 +115,17 @@
     overflow: hidden;
   }
 }
-.h3 {
+.about h3 {
   color: black;
 }
-ul {
+.about ul {
   color: black;
 }
-.container-fluid {
+.about .container-fluid {
   padding-left: 25px;
   padding-right: 25px;
 }
-.description {
+.about .description {
   display: flex;
   align-items: center;
   justify-content: center;

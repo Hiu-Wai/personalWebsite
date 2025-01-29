@@ -168,4 +168,7 @@
   width: 70vw;
   height: auto;
 }
+.contact-details a{
+  color: #007bff;
+}
 </style>
