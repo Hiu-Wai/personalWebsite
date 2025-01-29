@@ -253,11 +253,13 @@ function getIcon(iconKey) {
     font-size: 24px;
   }
 }
-.carousel-control-next {
-  padding-right: -50px;
-  padding-left: 100px;
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+  padding-left: 0;
+  padding-right: 0;
 }
-.carousel-control-prev {
-  padding-left: 50px;
+.project-image{
+  height:auto;
+  width:100%;
 }
 </style>
