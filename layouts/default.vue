@@ -56,7 +56,7 @@ body {
   }
   @media (min-width: 1201px) {
   body {
-    font-size: 20px; /* Adjust as necessary */
+    font-size: 24px; /* Adjust as necessary */
   }
 }
 .custom-bg {
@@ -67,6 +67,10 @@ body {
   background-attachment: fixed;
   height: 100vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
+
+  min-height:100%;    
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .btn {
   background-color: #00f6ed;
