@@ -23,52 +23,44 @@ export default {
 body {
   font-family: "Public Sans";
   color: white;
-  font-size: 1.5rem;
+  /* Small devices (landscape phones, 576px and up) */
 }
-/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  body{
-    font-size:7px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) {
-  body{
-    font-size:15px;
+    body{
+      font-size:7px;
+    }
   }
 
-}
+  /* Medium devices (tablets, 768px and up)*/
+  @media (max-width: 768px) {
+    body{
+      font-size:15px;
+    }
 
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  body{
-    font-size:16px;
   }
 
-}
+  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 992px) {
+    body{
+      font-size:16px;
+    }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-  body{
-    font-size:18px;
   }
 
-}
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+    body{
+      font-size:18px;
+    }
 
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
-  body{
-    font-size:1.5rem;
   }
-}
 .custom-bg {
   background-image: url("/images/background-image.jpg"); /* Path to your image */
   background-size: cover; /* Make the image cover the whole page */
   background-repeat: no-repeat; /* Prevent repeating */
   background-position: center center; /* Center the image */
   background-attachment: fixed;
-  height: 150vh; /* Ensure the body covers the full viewport height */
+  height: 100vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
 }
 .btn {
