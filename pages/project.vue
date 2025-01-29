@@ -115,7 +115,7 @@ h2 {
   font-family: "PT Sans";
   font-style: italic !important;
 }
-.project-image {
+.container .project-image {
   height: 33vh;
   width: auto;
   overflow: hidden;
