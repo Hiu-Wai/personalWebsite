@@ -180,7 +180,7 @@ function getIcon(iconKey) {
 <style>
 #carouselExampleIndicators {
   padding: 5rem;
-  min-height: 60vh;
+  min-height: 53vh;
   margin: auto;
   width: 80vw;
 }
