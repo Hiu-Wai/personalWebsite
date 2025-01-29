@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex h-100 text-center text-white custom-bg">
+  <div class="d-flex h-100 text-center text-white body">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
       <main class="px-3">
         <h3>HELLO EVERYONE, I AM</h3>

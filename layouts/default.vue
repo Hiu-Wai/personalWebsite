@@ -3,7 +3,7 @@
     <link rel="icon" href="/images/profile.jpeg" type="image/jpeg" />
     <title>Chloe Ho</title>
   </Head>
-  <div>
+  <div class="custom-bg">
     <Navbar />
     <!-- Include the navbar component -->
     <slot />
@@ -24,39 +24,39 @@ export default {
 </script>
 
 <style>
-body {
+.body {
   font-family: "Public Sans";
   color: white;
   /* Small devices (landscape phones, 576px and up) */
 }
 @media (max-width: 576px) {
-  body {
+  .body {
     font-size: 7px;
   }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  body {
+  .body {
     font-size: 15px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  body {
+  .body {
     font-size: 16px;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-  body {
+  .body {
     font-size: 18px;
   }
 }
 @media (min-width: 1201px) {
-  body {
+  .body {
     font-size: 24px; /* Adjust as necessary */
   }
 }

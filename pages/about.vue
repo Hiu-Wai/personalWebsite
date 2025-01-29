@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex h-100 custom-bg">
+  <div class="d-flex h-100 body">
     <div class="container-fluid text-start">
       <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
         <div class="row">
