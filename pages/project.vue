@@ -1,5 +1,5 @@
 <template>
-  <body class="d-flex h-100 text-center text-white custom-bg">
+  <div class="d-flex h-100 text-center text-white custom-bg">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
       <div class="d-flex justify-content-center">
         <div
@@ -53,7 +53,7 @@
         </div>
       </main>
     </div>
-  </body>
+  </div>
 </template>
 <script setup>
 import { useMainStore } from "~/store/index"; // Import the Pinia store

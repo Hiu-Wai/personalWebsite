@@ -1,8 +1,12 @@
 <template>
+<Head>
+    <link rel="icon" href="/images/profile.jpeg" type="image/jpeg" />
+    <title>Chloe Ho</title>
+  </Head>
   <div>
     <Navbar />
     <!-- Include the navbar component -->
-    <slot/>
+    <slot />
     <!-- This will render the page content -->
   </div>
 </template>
@@ -26,35 +30,32 @@ body {
   /* Small devices (landscape phones, 576px and up) */
 }
 @media (max-width: 576px) {
-    body{
-      font-size:7px;
-    }
+  body {
+    font-size: 7px;
   }
+}
 
-  /* Medium devices (tablets, 768px and up)*/
-  @media (max-width: 768px) {
-    body{
-      font-size:15px;
-    }
-
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
   }
+}
 
-  /* Large devices (desktops, 992px and up) */
-  @media (max-width: 992px) {
-    body{
-      font-size:16px;
-    }
-
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
   }
+}
 
-  /* X-Large devices (large desktops, 1200px and up) */
-  @media (max-width: 1200px) {
-    body{
-      font-size:18px;
-    }
-
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  body {
+    font-size: 18px;
   }
-  @media (min-width: 1201px) {
+}
+@media (min-width: 1201px) {
   body {
     font-size: 24px; /* Adjust as necessary */
   }
@@ -67,13 +68,13 @@ body {
   background-attachment: fixed;
   height: 100vh; /* Ensure the body covers the full viewport height */
   margin: 0; /* Remove default margins */
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
-header{
+header {
   width: 100%;
 }
-main{
+main {
   flex: 1;
 }
 .btn {
