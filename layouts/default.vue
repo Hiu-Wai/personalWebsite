@@ -28,7 +28,7 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   body{
-    font-size:9px;
+    font-size:7px;
   }
 }
 
