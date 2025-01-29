@@ -25,4 +25,10 @@
   font-size: 26px;
   color: #88ccf1;
 }
+@media (max-width: 992px) {
+  .nav-link {
+    text-align: center;
+    justify-content: center;
+  }
+}
 </style>
