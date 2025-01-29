@@ -215,41 +215,56 @@ function getIcon(iconKey) {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  .carousel-item,
-  .project-button {
-    font-size: 9px;
+  .carousel-item {
+    font-size: 14px;
+  };
+  .project-button{
+    padding: 7px, 14px;
+    font-size: 14px;
   }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  .carousel-item,
-  .project-button {
+  .carousel-item{
+    font-size: 15px;
+  }
+  .project-button{
+    padding: 8px 16px;
     font-size: 15px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  .carousel-item,
-  .project-button {
+  .carousel-item{
     font-size: 16px;
     margin-bottom: 20px;
+  }
+  .project-button{
+    padding: 8px 16px;
+    font-size: 16px;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-  .carousel-item,
-  .project-button {
+  .carousel-item {
     font-size: 18px;
+  }
+  .project-button{
+    padding: 9px 18px;
+    font-size: 16px;
   }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-  .carousel-item,
-  .project-button {
+  .carousel-item{
+    font-size: 24px;
+  }
+  .project-button{
+    padding: 10px 20px;
     font-size: 24px;
   }
 }

@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <!-- Include the navbar component -->
-    <slot />
+    <slot/>
     <!-- This will render the page content -->
   </div>
 </template>
@@ -54,6 +54,11 @@ body {
     }
 
   }
+  @media (min-width: 1201px) {
+  body {
+    font-size: 20px; /* Adjust as necessary */
+  }
+}
 .custom-bg {
   background-image: url("/images/background-image.jpg"); /* Path to your image */
   background-size: cover; /* Make the image cover the whole page */
