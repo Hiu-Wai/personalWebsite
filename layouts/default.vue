@@ -72,6 +72,12 @@ body {
   padding-top: 20px;
   padding-bottom: 20px; */
 }
+header{
+  width: 100%;
+}
+main{
+  flex: 1;
+}
 .btn {
   background-color: #00f6ed;
   color: #708189;
