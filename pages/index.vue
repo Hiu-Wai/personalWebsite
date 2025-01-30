@@ -4,7 +4,7 @@
       <main class="px-3">
         <h3>HELLO EVERYONE, I AM</h3>
         <h1>CHLOE HO (HIU WAI HO)</h1>
-        <div class="hover-overlay" onclick='triggerHoverEffect(this)'>
+        <div class="hover-overlay" @click="triggerHoverEffect">
           <img
             class="bd-placeholder-img rounded-circle profile-pic"
             src="public\images\profile.jpeg"
@@ -122,7 +122,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .profile-pic {
   width: 300px; /* Set your desired width */
   height: 300px; /* Set your desired height */
@@ -206,12 +206,29 @@
   color: #007bff;
 }
 </style>
-
 <script>
-function triggerHoverEffect(element) {
-  element.classList.add("active");
-  setTimeout(() => {
-    element.classList.remove("active");
-  }, 500); // Removes the effect after 500ms
-}
+export default {
+  name: "ChloeProfile",
+  methods: {
+    triggerHoverEffect(event) {
+      event.currentTarget.classList.add("active");
+      setTimeout(() => {
+        event.currentTarget.classList.remove("active");
+      }, 500);
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const overlays = document.querySelectorAll(".hover-overlay");
+      overlays.forEach((overlay) => {
+        overlay.addEventListener("touchstart", () => {
+          overlay.classList.add("active");
+          setTimeout(() => {
+            overlay.classList.remove("active");
+          }, 500);
+        });
+      });
+    });
+  }
+};
 </script>
