@@ -1,8 +1,4 @@
 <template>
-<Head>
-    <link rel="icon" href="/images/profile.jpeg" type="image/jpeg" />
-    <title>Chloe Ho</title>
-  </Head>
   <div class="custom-bg">
     <Navbar />
     <!-- Include the navbar component -->
@@ -11,19 +7,49 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import Navbar from "~/components/Navbar.vue";
+
+import { useHead } from 'unhead';
+
 
 export default {
   components: {
     Navbar,
   },
 };
+</script> -->
+<script>
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Navbar from "~/components/Navbar.vue";
+import { useHead } from 'unhead';
+
+export default {
+  components: {
+    Navbar,
+  },
+  setup() {
+    useHead({
+      title: "Chloe Ho",
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/images/profile-circle.png",
+        },
+      ],
+    });
+  },
+};
 </script>
 
 <style>
+.icon-size {
+  width: 100px; /* Adjust width */
+  height: 100px; /* Adjust height */
+}
 .body {
   font-family: "Public Sans";
   color: white;
