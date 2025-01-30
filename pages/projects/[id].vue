@@ -125,14 +125,14 @@ function getIcon(iconKey) {
                         v-for="button in project.buttons"
                         :key="button.text"
                         :href="button.hyperlink"
-                        class="btn btn-lg btn-primary m-2 project-button"
+                        class="btn btn-md btn-primary m-2 project-button"
                       >
                         {{ button.text }}
                       </a>
                       <NuxtLink to="/project">
                         <button
                           type="button"
-                          class="btn btn-lg btn-primary m-2 project-button"
+                          class="btn btn-md btn-primary m-2 project-button"
                         >
                           Look at other projects
                         </button>
