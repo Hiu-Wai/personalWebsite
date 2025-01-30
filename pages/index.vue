@@ -133,7 +133,8 @@
 }
 .hover-overlay{
   position: relative;
-  display: inline-block
+  display: inline-block;
+  cursor:pointer;
 }
 .mask{
   position: absolute;
