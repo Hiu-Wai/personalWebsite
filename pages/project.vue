@@ -132,4 +132,15 @@ h2 {
 .container .project-image:hover {
   transform: translateX(-20px);
 }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .container .project-image:hover {
+  transform: translateX(-20px);
+}
+  .container .project-image{
+    transform: translateX(0);
+  }
+}
+
 </style>
