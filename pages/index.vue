@@ -4,14 +4,17 @@
       <main class="px-3">
         <h3>HELLO EVERYONE, I AM</h3>
         <h1>CHLOE HO (HIU WAI HO)</h1>
-        <img
-          class="bd-placeholder-img rounded-circle profile-pic"
-          src="public\images\profile.jpeg"
-          role="img"
-          aria-label="Placeholder: 140x140"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        /><title></title><rect width="100%" height="100%" fill="#777"></rect>
+        <div class="hover-overlay">
+          <img
+            class="bd-placeholder-img rounded-circle profile-pic"
+            src="public\images\profile.jpeg"
+            role="img"
+            aria-label="Placeholder: 140x140"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          /><title></title><rect width="100%" height="100%" fill="#777"></rect>
+          <div class="mask"></div>
+        </div>
         <h3>
           I'm an undergraduate computer science student who is interested in
           learning new things.
@@ -126,6 +129,29 @@
   object-fit: cover; /* Ensures the image covers the dimensions without distortion */
   border-radius: 50%; /* Ensures the image is circular */
   overflow: hidden; /* Prevents overflow of the image */
+  display:block;
+}
+.hover-overlay{
+  position: relative;
+  display: inline-block
+}
+.mask{
+  position: absolute;
+  top: 0;
+  left: o;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+        45deg,
+        hsla(168, 85%, 52%, 0.5),
+        hsla(263, 88%, 45%, 0.5) 100%
+      );
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  border-radius: 50%;
+}
+.hover-overlay:hover .mask{
+  opacity: 1;
 }
 @media (max-width: 576px) {
   .contact-details {
@@ -168,7 +194,7 @@
   width: 70vw;
   height: auto;
 }
-.contact-details a{
+.contact-details a {
   color: #007bff;
 }
 </style>
