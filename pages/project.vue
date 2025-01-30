@@ -19,6 +19,7 @@
               <div class="col" v-for="(project, id) in projects" :key="id">
                 <div class="card h-100">
                   <h2 class="text-uppercase">{{ project.title }}</h2>
+                  <div class = "hover-slide">
                   <img
                     class="project-image bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block"
                     width="100%"
@@ -31,6 +32,7 @@
                   />
                   <title>Placeholder</title
                   ><rect width="100%" height="100%" fill="#F5F9E9"></rect>
+                </div>
                   <div class="card-body d-flex flex-column">
                     <p class="card-text" v-html="project.shortDescription"></p>
                     <div
@@ -115,9 +117,19 @@ h2 {
   font-family: "PT Sans";
   font-style: italic !important;
 }
+.container .hover-slide{
+  display: inline-block;
+  overlay: hidden;
+}
+.container .hover-slide .project-image{
+  transition: transform 0.3s ease-in-out;
+}
 .container .project-image {
   height: 33vh;
   width: auto;
   overflow: hidden;
+}
+.container .project-image:hover {
+  transform: translateX(-20px);
 }
 </style>
