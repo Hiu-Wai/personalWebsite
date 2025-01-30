@@ -139,7 +139,7 @@
 .mask{
   position: absolute;
   top: 0;
-  left: o;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -199,3 +199,25 @@
   color: #007bff;
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const hoverOverlay = document.getElementById('hoverOverlay');
+  const mask = hoverOverlay.querySelector('.mask');
+  
+  hoverOverlay.addEventListener('touchstart', () => {
+    mask.style.opacity = '1'; // Show the overlay on touch
+  });
+
+  document.addEventListener('touchstart', (e) => {
+    if (!hoverOverlay.contains(e.target)) {
+      mask.style.opacity = '0'; // Hide the overlay when tapping outside the image
+    }
+  });
+
+  hoverOverlay.addEventListener('touchend', () => {
+    mask.style.opacity = '0'; // Hide the overlay when the touch ends on the image
+  });
+});
+</script>
+
