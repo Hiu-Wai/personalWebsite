@@ -19,20 +19,24 @@
               <div class="col" v-for="(project, id) in projects" :key="id">
                 <div class="card h-100">
                   <h2 class="text-uppercase">{{ project.title }}</h2>
-                  <div class = "hover-slide">
-                  <img
-                    class="project-image bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block"
-                    width="100%"
-                    :src="project.image"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                    :style="getImageStyle(id)"
-                  />
-                  <title>Placeholder</title
-                  ><rect width="100%" height="100%" fill="#F5F9E9"></rect>
-                </div>
+                  <div class="hover-slide">
+                    <img
+                      class="project-image bd-placeholder-img card-img-top img-fluid custom-size rounded mx-auto d-block pulse-on-touch"
+                      data-mdb-animation-init=""
+                      data-mdb-animation-start="onHover"
+                      data-mdb-animation="pulse"
+                      data-mdb-animation-reset="true"
+                      data-mdb-animation-initialized="true"
+                      style="animation-duration: 500ms"
+                      width="100%"
+                      :src="project.image"
+                      role="img"
+                      aria-label="Placeholder: Thumbnail"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false"
+                      :style="getImageStyle(id)"
+                    />
+                  </div>
                   <div class="card-body d-flex flex-column">
                     <p class="card-text" v-html="project.shortDescription"></p>
                     <div
@@ -77,7 +81,7 @@ function getImageStyle(id) {
   return { backgroundColor: "#C7FFED" };
 }
 </script>
-<style>
+<style scoped>
 .custom-size {
   width: 100%;
   height: 100%;
@@ -117,30 +121,56 @@ h2 {
   font-family: "PT Sans";
   font-style: italic !important;
 }
-.container .hover-slide{
-  display: inline-block;
-  overlay: hidden;
+@media (hover: hover) {
+  .container .hover-slide {
+    overflow: hidden;
+  }
+  .container .hover-slide .project-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  .container .project-image:hover {
+    transform: translateX(-20px);
+  }
 }
-.container .hover-slide .project-image{
-  transition: transform 0.3s ease-in-out;
+@media (hover: none) {
+   .pulse-on-touch {
+    animation: pulse 0.5s;
+    animation-iteration-count: 5;
+  }
+  .container .hover-slide {
+    overflow: hidden;
+  }
+  .container .hover-slide .project-image {
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@keyframes translateBack {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Define the pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .container .project-image {
   height: 33vh;
   width: auto;
   overflow: hidden;
 }
-.container .project-image:hover {
-  transform: translateX(-20px);
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) {
-  .container .project-image:hover {
-  transform: translateX(-20px);
-}
-  .container .project-image{
-    transform: translateX(0);
-  }
-}
-
 </style>
