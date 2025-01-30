@@ -4,7 +4,7 @@
       <main class="px-3">
         <h3>HELLO EVERYONE, I AM</h3>
         <h1>CHLOE HO (HIU WAI HO)</h1>
-        <div class="hover-overlay">
+        <div class="hover-overlay" id = "hoverOverlay">
           <img
             class="bd-placeholder-img rounded-circle profile-pic"
             src="public\images\profile.jpeg"
