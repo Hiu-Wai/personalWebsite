@@ -4,7 +4,7 @@
       <main class="px-3">
         <h3>HELLO EVERYONE, I AM</h3>
         <h1>CHLOE HO (HIU WAI HO)</h1>
-        <div class="hover-overlay" @click="triggerHoverEffect">
+        <div class="hover-overlay">
           <img
             class="bd-placeholder-img rounded-circle profile-pic"
             src="public\images\profile.jpeg"
@@ -129,38 +129,34 @@
   object-fit: cover; /* Ensures the image covers the dimensions without distortion */
   border-radius: 50%; /* Ensures the image is circular */
   overflow: hidden; /* Prevents overflow of the image */
-  display:block;
-}
-.hover-overlay{
-  position: relative;
-  display: inline-block;
-  cursor:pointer;
-}
-.mask{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-        45deg,
-        hsla(168, 85%, 52%, 0.5),
-        hsla(263, 88%, 45%, 0.5) 100%
-      );
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-  border-radius: 50%;
 }
 
-.hover-overlay:hover .mask{
-  opacity: 1;
-}
+@media (hover: hover) {
+  .hover-overlay {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      hsla(168, 85%, 52%, 0.5),
+      hsla(263, 88%, 45%, 0.5) 100%
+    );
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    border-radius: 50%;
+  }
 
-/* Active state for touch devices */
-.hover-overlay:active .mask {
-  opacity: 1;
+  .hover-overlay:hover .mask {
+    opacity: 1;
+  }
 }
-
 @media (max-width: 576px) {
   .contact-details {
     background-size: cover;
@@ -206,29 +202,3 @@
   color: #007bff;
 }
 </style>
-<script>
-export default {
-  name: "ChloeProfile",
-  methods: {
-    triggerHoverEffect(event) {
-      event.currentTarget.classList.add("active");
-      setTimeout(() => {
-        event.currentTarget.classList.remove("active");
-      }, 500);
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      const overlays = document.querySelectorAll(".hover-overlay");
-      overlays.forEach((overlay) => {
-        overlay.addEventListener("touchstart", () => {
-          overlay.classList.add("active");
-          setTimeout(() => {
-            overlay.classList.remove("active");
-          }, 500);
-        });
-      });
-    });
-  }
-};
-</script>
