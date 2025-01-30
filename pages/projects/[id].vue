@@ -200,7 +200,7 @@ function getIcon(iconKey) {
   object-fit: contain;
 }
 .btn-primary {
-  background-color: #00f6ed;
+  background-color: #b0f2b4;
   color: #708189;
 }
 
@@ -219,7 +219,7 @@ function getIcon(iconKey) {
     font-size: 14px;
   };
   .project-button{
-    padding: 7px, 14px;
+    padding: 6px 12px;
     font-size: 14px;
   }
 }
@@ -253,7 +253,7 @@ function getIcon(iconKey) {
     font-size: 18px;
   }
   .project-button{
-    padding: 9px 18px;
+    padding: 8px 16px;
     font-size: 16px;
   }
 }
@@ -264,7 +264,7 @@ function getIcon(iconKey) {
     font-size: 24px;
   }
   .project-button{
-    padding: 10px 20px;
+    padding: 9px 18px;
     font-size: 24px;
   }
 }
