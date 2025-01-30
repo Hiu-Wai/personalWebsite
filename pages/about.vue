@@ -52,6 +52,11 @@
                 <li>Distinction in UK Bebras Challenge 2024</li>
                 <li>Shortlisted in UCL Minerva's Hack 2025</li>
               </ul>
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+              >Leadership roles</strong>
+              <ul>
+                <li>KCL HKPass Subcommitee 24-25</li>
+              </ul>
             </div>
           </div>
         </div>
