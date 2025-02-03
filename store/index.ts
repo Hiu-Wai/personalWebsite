@@ -32,7 +32,7 @@ export const useMainStore = defineStore('projectStore', {
         image: '/images/holystick_logo.png',
         timeFrame: 'Nov 2024',
         shortDescription: 'Holystick is a website that was built during UCL Holistic AI Hackathon 2024. <br> It aims to provide different AI models to access whether a client is eligible for a loan.',
-        longDescription: "Holystic is a website built for the <a href = 'https://hackathon.holisticai.com/'>UCL HAI Hackathon 2024 with Holistic AI</a>. The website aims to provide different AI models for the client to decide whether they can take a loan. It also states the benefits and disadvantages of each AI model so that the user is more aware of the impacts for each.",
+        longDescription: "Holystic is a website built for the <a href = 'https://hackathon.holisticai.com/'>UCL AI Hackathon 2024 with Holistic AI</a>. The website aims to provide different AI models for the client to decide whether they can take a loan. It also states the benefits and disadvantages of each AI model so that the user is more aware of the impacts for each.",
         techniques: ['Python', 'flask', 'Vue', 'Bootstrap', 'AI', 'ML'],
         takeaway: 'Learnt how to use flask for the first time',
         note: 'Data used for this website is based on database provided, might not reflect reality.',
