@@ -177,7 +177,7 @@ function getIcon(iconKey) {
   </div>
 </template>
 
-<style>
+<style scoped>
 #carouselExampleIndicators {
   padding: 4rem;
   min-height: 53vh;
