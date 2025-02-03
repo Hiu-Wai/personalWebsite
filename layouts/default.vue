@@ -33,6 +33,7 @@ export default {
   setup() {
     useHead({
       title: "Chloe Ho",
+      placeholder: "Chloe Ho",
       link: [
         {
           rel: "icon",
