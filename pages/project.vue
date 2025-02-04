@@ -129,11 +129,6 @@ h2 {
 
   } 
 }
-/* Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-  .project-button {
-  }
-}*/
 
 @media (hover: hover) {
   .container .hover-slide {
