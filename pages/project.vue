@@ -45,7 +45,7 @@
                       <NuxtLink :to="'/projects/' + id">
                         <button
                           type="button"
-                          class="btn btn-lg btn-outline-secondary"
+                          class="btn btn-lg btn-outline-secondary project-button"
                         >
                           Learn more
                         </button>
@@ -121,6 +121,20 @@ h2 {
   font-family: "PT Sans";
   font-style: italic !important;
 }
+
+@media (max-width: 576px) {
+  .project-button{
+    padding: 4px;
+    font-size: 16px;
+
+  } 
+}
+/* Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .project-button {
+  }
+}*/
+
 @media (hover: hover) {
   .container .hover-slide {
     overflow: hidden;
