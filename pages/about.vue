@@ -56,6 +56,7 @@
               >Leadership roles</strong>
               <ul>
                 <li>KCL HKPass Subcommitee 24-25</li>
+                <li>KCL WiSTEM Ambassador</li>
               </ul>
             </div>
           </div>
