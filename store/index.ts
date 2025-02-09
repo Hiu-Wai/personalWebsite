@@ -3,6 +3,28 @@ import { defineStore } from 'pinia'
 export const useMainStore = defineStore('projectStore', {
   state: () => ({
     projects: {
+        '9op11u4qdgxmzfnxlbcd':{
+            title: 'Everyday Tourist',
+            people: { status: 'Group Project', icon: 'groups' },
+            type: { status: 'Website', icon: 'web' },
+            image: '/images/Everyday_Tourist__1_-removebg-preview.png',
+            timeFrame: 'Feb 2025',
+            shortDescription: "Everyday Tourist is a PWA built during KCL Tech4Good 2025 which allows user to visit more niche locations through the use of wikipedia.",
+            longDescription: "Everyday Tourist is a PWA built during KCL Tech4Good 2025 that accesses the user's current location, and recommends it places based on the distance they are willing to travel, weather conditions, and data from wikipedia.",
+            techniques: ['Vue', 'Tailwind', 'Python', 'AI'],
+            takeaway: 'Learnt how to use python for backend and dealing with requests for the first time',
+            note: 'Project is incomplete and subjected to further development.',
+            buttons:[
+                {
+                    text: 'Visit project deployment',
+                    hyperlink: 'https://everydaytourist.vercel.app/auth/login'
+                },
+                {
+                    text: 'Visit Github for project',
+                    hyperlink:'https://github.com/dylankainth/everydaytourist' 
+                }
+            ]
+            },
         '9op11u4bzzqgzfnxlbcd':{
             title: 'Anagolay',
             people: { status: 'Group Project', icon: 'groups' },
