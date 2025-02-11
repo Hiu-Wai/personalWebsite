@@ -6,7 +6,7 @@ export const useMainStore = defineStore('projectStore', {
         '9op11u4qdgxmzfnxlbcd':{
             title: 'Everyday Tourist',
             people: { status: 'Group Project', icon: 'groups' },
-            type: { status: 'Website', icon: 'web' },
+            type: { status: 'Progressive web app', icon: 'app' },
             image: '/images/Everyday_Tourist__1_-removebg-preview.png',
             timeFrame: 'Feb 2025',
             shortDescription: "Everyday Tourist is a PWA built during KCL Tech4Good 2025 which allows user to visit more niche locations through the use of wikipedia.",
@@ -122,6 +122,7 @@ export const useMainStore = defineStore('projectStore', {
         language: "bi bi-translate",
         takeaway: "bi bi-journal-code",
         note: "bi bi-pencil-square",
+        app: "bi bi-app-indicator"
     }
     })
 })
