@@ -6,7 +6,7 @@ export const useMainStore = defineStore("projectStore", {
         "4l5m7n9opqrs1tuvw3xyza2b8c6d3efghij5k": {
         title: "Eats Ensemble",
         people: { status: "Personal Project", icon: "person" },
-        type: { status: "Progressive web app", icon: "app" },
+        type: { status: "Website", icon: "web" },
         image: "/images/meal-svgrepo-com.svg",
         timeFrame: "Feb 2025",
         shortDescription:
@@ -27,7 +27,7 @@ export const useMainStore = defineStore("projectStore", {
       "9op11u4qdgxmzfnxlbcd": {
         title: "Everyday Tourist",
         people: { status: "Group Project", icon: "groups" },
-        type: { status: "Progressive web app", icon: "app" },
+        type: { status: "PWA", icon: "app" },
         image: "/images/Everyday_Tourist__1_-removebg-preview.png",
         timeFrame: "Feb 2025",
         shortDescription:
