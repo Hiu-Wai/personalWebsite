@@ -1,128 +1,161 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useMainStore = defineStore('projectStore', {
+export const useMainStore = defineStore("projectStore", {
   state: () => ({
     projects: {
-        '9op11u4qdgxmzfnxlbcd':{
-            title: 'Everyday Tourist',
-            people: { status: 'Group Project', icon: 'groups' },
-            type: { status: 'Progressive web app', icon: 'app' },
-            image: '/images/Everyday_Tourist__1_-removebg-preview.png',
-            timeFrame: 'Feb 2025',
-            shortDescription: "Everyday Tourist is a PWA built during KCL Tech4Good 2025 which allows user to visit more niche locations through the use of wikipedia.",
-            longDescription: "Everyday Tourist is a PWA built during KCL Tech4Good 2025 that accesses the user's current location, and recommends it places based on the distance they are willing to travel, weather conditions, and data from wikipedia.",
-            techniques: ['Vue', 'Tailwind', 'Python', 'AI'],
-            takeaway: 'Learnt how to use python for backend and dealing with requests for the first time',
-            note: 'Project is incomplete and subjected to further development.',
-            buttons:[
-                {
-                    text: 'Visit project deployment',
-                    hyperlink: 'https://everydaytourist.vercel.app/auth/login'
-                },
-                {
-                    text: 'Visit Github for project',
-                    hyperlink:'https://github.com/dylankainth/everydaytourist' 
-                }
-            ]
-            },
-        '9op11u4bzzqgzfnxlbcd':{
-            title: 'Anagolay',
-            people: { status: 'Group Project', icon: 'groups' },
-            type: { status: 'Website', icon: 'web' },
-            image: '/images/anagolay.png',
-            timeFrame: 'Jan 2025',
-            shortDescription: "Anagolay means the goddness of lost items. The website is built during UCL Minerva's Hack 2025 aims to reunite university students with their lost belongings.",
-            longDescription: "Anagolay is a lost and found website  built during <a href = 'https://www.ucl.ac.uk/computer-science/about/equity-diversity-and-inclusion/gender-equality-athena-swan/minervas-hack-2025'> UCL Minerva's Hack </a> designed to help university students report and recover lost or found items efficiently and securely. <br> Users can fill out a form to report lost/ found items and once logged in. The user can track their past submissions, making it easier to follow up or resolve ongoing report.<br> A NLTK driven algorithm is used to match reported lost items with found items based on submitted details.",
-            techniques: ['React', 'Firebase', 'Flask', 'AI'],
-            takeaway: 'Learnt how to use React for the first time',
-            note: 'Project is incomplete and subjected to further development.',
-            buttons:[
-                {
-                    text: 'Visit project deployment',
-                    hyperlink: 'https://anagolay.netlify.app/'
-                },
-                {
-                    text: 'Visit Github for project',
-                    hyperlink:'https://github.com/Hiu-Wai/lost-and-found' 
-                }
-            ]
-            },
-    '41t71u4bzzqgzfnxlxnq':{
-        title: 'HolyStick',
-        people: { status: 'Group Project', icon: 'groups' },
-        type: { status: 'Website', icon: 'web' },
-        image: '/images/holystick_logo.png',
-        timeFrame: 'Nov 2024',
-        shortDescription: 'Holystick is a website that was built during UCL Holistic AI Hackathon 2024. <br> It aims to provide different AI models to access whether a client is eligible for a loan.',
-        longDescription: "Holystic is a website built for the <a href = 'https://hackathon.holisticai.com/'>UCL AI Hackathon 2024 with Holistic AI</a>. The website aims to provide different AI models for the client to decide whether they can take a loan. It also states the benefits and disadvantages of each AI model so that the user is more aware of the impacts for each.",
-        techniques: ['Python', 'flask', 'Vue', 'Bootstrap', 'AI', 'ML'],
-        takeaway: 'Learnt how to use flask for the first time',
-        note: 'Data used for this website is based on database provided, might not reflect reality.',
-        buttons:[
-            {
-                text: 'Visit project deployment',
-                hyperlink: 'https://holystick.dylankainth.com/'
-            },
-            {
-                text: 'Visit Github for project',
-                hyperlink:'https://github.com/dylankainth/holystick' 
-            }
-        ]
-        },
-        '8zyt64kzgkhps2hiovrc':{
-            title: 'FashTrack',
-            people: { status: 'Group Project', icon: 'groups' },
-            type: { status: 'Website', icon: 'web' },
-            image: '/images/fashtrack_logo.png',
-            timeFrame: 'Nov 2024',
-            shortDescription: 'Fash track is a website that was built during Culturehack 2024. <br> It aims to simplify job applications and provide mentorship opportunities.',
-            longDescription: 'FashTrack is a website built in Culturehack 2024 that aims to ease the job application process in the fashion industry. It contains a job tracker which displays the jobs available at the momenet. It also has a mentorship hub that gives the opportunity for users to interact with professionals in the industry.',
-            techniques: ['Nuxt', 'Vue', 'Bootstrap', 'MongoDB'],
-            takeaway: 'Learnt about Nuxt, Vue and Bootstrap and used these for the first time.',
-            note: 'only a prototype of the final website. Data used is made up.',
-            buttons:[
-                {
-                    text: 'Visit project deployment',
-                    hyperlink: 'https://fashtrack.netlify.app'
-                },
-                {
-                    text: 'Visit Github for project',
-                    hyperlink:'https://github.com/Hiu-Wai/fashtrack' 
-                }
-            ]
-        },
-        'n0erng2887b0v0luu579':{
-            title: 'Chatter App',
-            people: { status: 'Personal Project', icon: 'person' },
-            type: { status: 'Website', icon: 'web' },
-            image: 'https://ip.lfe.mw.tum.de/sections/moocus.png',
-            timeFrame: 'March 2023',
-            shortDescription: 'Chatter App is a website that mimics the functionality of a messaging app. User can create new channels and send new messages.',
-            longDescription: 'Chatter App is a website created whilst learning about HTML, CSS, JavaScript through an online course in MOOC. It aims to mimic the functionality of a messaging app, where the user can create new channels, send messages. However, it currently does not allow multi-user usage.',
-            techniques: ['HTML', 'CSS', 'JavaScript'],
-            takeaway: 'Learnt how to use HTML, CSS and JavaScript',
-            note: 'Only a prototype of the final website. Data used is made up.',
-            buttons:[
-                {
-                    text: 'Visit project deployment',
-                    hyperlink: "https://quackquackchat.netlify.app/"
-                },
-                {
-                    text: 'Visit Github for project',
-                    hyperlink:'https://github.com/Hiu-Wai/chatter-app' 
-                }
-            ]
-        },
+        "4l5m7n9opqrs1tuvw3xyza2b8c6d3efghij5k": {
+        title: "Eats Ensemble",
+        people: { status: "Personal Project", icon: "person" },
+        type: { status: "Progressive web app", icon: "app" },
+        image: "/images/meal-svgrepo-com.svg",
+        timeFrame: "Feb 2025",
+        shortDescription:
+          "Eats Ensemble  is a website where you can find the perfect recipe based on your preferences and plan your meals for the week.",
+        longDescription:
+          "Eats Ensemble is a website where you can find the perfect recipe based on your preferences and plan your meals for the week. You can filter recipes based on dietary requirements, ingredients, and cooking time. You can also create meal plans and this automatically creates a shopping list as well.",
+        techniques: ["Nuxt", "Vue", "Bootstrap", "Pinia", "Python"],
+        takeaway:
+          "Learnt how to scrape data from websites using BeautifulSoup",
+        note: "n/a",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://eatsensemble.netlify.app/",
+          },
+        ],
+      },
+      "9op11u4qdgxmzfnxlbcd": {
+        title: "Everyday Tourist",
+        people: { status: "Group Project", icon: "groups" },
+        type: { status: "Progressive web app", icon: "app" },
+        image: "/images/Everyday_Tourist__1_-removebg-preview.png",
+        timeFrame: "Feb 2025",
+        shortDescription:
+          "Everyday Tourist is a PWA built during KCL Tech4Good 2025 which allows user to visit more niche locations through the use of wikipedia.",
+        longDescription:
+          "Everyday Tourist is a PWA built during KCL Tech4Good 2025 that accesses the user's current location, and recommends it places based on the distance they are willing to travel, weather conditions, and data from wikipedia.",
+        techniques: ["Vue", "Tailwind", "Python", "AI"],
+        takeaway:
+          "Learnt how to use python for backend and dealing with requests for the first time",
+        note: "Project is incomplete and subjected to further development.",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://everydaytourist.vercel.app/auth/login",
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/dylankainth/everydaytourist",
+          },
+        ],
+      },
+      "9op11u4bzzqgzfnxlbcd": {
+        title: "Anagolay",
+        people: { status: "Group Project", icon: "groups" },
+        type: { status: "Website", icon: "web" },
+        image: "/images/anagolay.png",
+        timeFrame: "Jan 2025",
+        shortDescription:
+          "Anagolay means the goddness of lost items. The website is built during UCL Minerva's Hack 2025 aims to reunite university students with their lost belongings.",
+        longDescription:
+          "Anagolay is a lost and found website  built during <a href = 'https://www.ucl.ac.uk/computer-science/about/equity-diversity-and-inclusion/gender-equality-athena-swan/minervas-hack-2025'> UCL Minerva's Hack </a> designed to help university students report and recover lost or found items efficiently and securely. <br> Users can fill out a form to report lost/ found items and once logged in. The user can track their past submissions, making it easier to follow up or resolve ongoing report.<br> A NLTK driven algorithm is used to match reported lost items with found items based on submitted details.",
+        techniques: ["React", "Firebase", "Flask", "AI"],
+        takeaway: "Learnt how to use React for the first time",
+        note: "Project is incomplete and subjected to further development.",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://anagolay.netlify.app/",
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/Hiu-Wai/lost-and-found",
+          },
+        ],
+      },
+      "41t71u4bzzqgzfnxlxnq": {
+        title: "HolyStick",
+        people: { status: "Group Project", icon: "groups" },
+        type: { status: "Website", icon: "web" },
+        image: "/images/holystick_logo.png",
+        timeFrame: "Nov 2024",
+        shortDescription:
+          "Holystick is a website that was built during UCL Holistic AI Hackathon 2024. <br> It aims to provide different AI models to access whether a client is eligible for a loan.",
+        longDescription:
+          "Holystic is a website built for the <a href = 'https://hackathon.holisticai.com/'>UCL AI Hackathon 2024 with Holistic AI</a>. The website aims to provide different AI models for the client to decide whether they can take a loan. It also states the benefits and disadvantages of each AI model so that the user is more aware of the impacts for each.",
+        techniques: ["Python", "flask", "Vue", "Bootstrap", "AI", "ML"],
+        takeaway: "Learnt how to use flask for the first time",
+        note: "Data used for this website is based on database provided, might not reflect reality.",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://holystick.dylankainth.com/",
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/dylankainth/holystick",
+          },
+        ],
+      },
+      "8zyt64kzgkhps2hiovrc": {
+        title: "FashTrack",
+        people: { status: "Group Project", icon: "groups" },
+        type: { status: "Website", icon: "web" },
+        image: "/images/fashtrack_logo.png",
+        timeFrame: "Nov 2024",
+        shortDescription:
+          "Fash track is a website that was built during Culturehack 2024. <br> It aims to simplify job applications and provide mentorship opportunities.",
+        longDescription:
+          "FashTrack is a website built in Culturehack 2024 that aims to ease the job application process in the fashion industry. It contains a job tracker which displays the jobs available at the momenet. It also has a mentorship hub that gives the opportunity for users to interact with professionals in the industry.",
+        techniques: ["Nuxt", "Vue", "Bootstrap", "MongoDB"],
+        takeaway:
+          "Learnt about Nuxt, Vue and Bootstrap and used these for the first time.",
+        note: "only a prototype of the final website. Data used is made up.",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://fashtrack.netlify.app",
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/Hiu-Wai/fashtrack",
+          },
+        ],
+      },
+      n0erng2887b0v0luu579: {
+        title: "Chatter App",
+        people: { status: "Personal Project", icon: "person" },
+        type: { status: "Website", icon: "web" },
+        image: "https://ip.lfe.mw.tum.de/sections/moocus.png",
+        timeFrame: "March 2023",
+        shortDescription:
+          "Chatter App is a website that mimics the functionality of a messaging app. User can create new channels and send new messages.",
+        longDescription:
+          "Chatter App is a website created whilst learning about HTML, CSS, JavaScript through an online course in MOOC. It aims to mimic the functionality of a messaging app, where the user can create new channels, send messages. However, it currently does not allow multi-user usage.",
+        techniques: ["HTML", "CSS", "JavaScript"],
+        takeaway: "Learnt how to use HTML, CSS and JavaScript",
+        note: "Only a prototype of the final website. Data used is made up.",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://quackquackchat.netlify.app/",
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/Hiu-Wai/chatter-app",
+          },
+        ],
+      },
     },
-    icons:{
-        groups: "bi bi-people-fill",
-        person: "bi bi-person-fill",
-        web: "bi bi-laptop",
-        calendar: "bi bi-calendar-event",
-        language: "bi bi-translate",
-        takeaway: "bi bi-journal-code",
-        note: "bi bi-pencil-square",
-        app: "bi bi-app-indicator"
-    }
-    })
-})
+    icons: {
+      groups: "bi bi-people-fill",
+      person: "bi bi-person-fill",
+      web: "bi bi-laptop",
+      calendar: "bi bi-calendar-event",
+      language: "bi bi-translate",
+      takeaway: "bi bi-journal-code",
+      note: "bi bi-pencil-square",
+      app: "bi bi-app-indicator",
+    },
+  }),
+});
