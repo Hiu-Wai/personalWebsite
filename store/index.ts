@@ -3,6 +3,31 @@ import { defineStore } from "pinia";
 export const useMainStore = defineStore("projectStore", {
   state: () => ({
     projects: {
+      "4l5548dncmw73s1tuvw3xyza2b8cflkayn0184y2": {
+        title: "King's Quest",
+        people: { status: "Group Project", icon: "groups" },
+        type: { status: "PWA", icon: "app" },
+        image: "/images/kingsQuest.png",
+        timeFrame: "Feb 2025",
+        shortDescription:
+          "King's Quest is a PWA that encourages users to join more societies by allowing user to log their attendance for each society event.",
+        longDescription:
+          "King's Quest is a PWA that enables the user to log their attendance for each society event by asking them to take a picture during the event, which is then approved by a society committee member. There are leadership boards for each society, and based off this data, societies can hold exclusive events for active members.",
+        techniques: ["Nuxt", "JavaScript", "Tailwind", "MongoDB"],
+        takeaway:
+          "Learnt how to use MongoDB and fetch data from there.",
+        note: "n/a",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://kingsquest.dylankainth.com/welcome"
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/dylankainth/first-year-hack",
+          },
+        ],
+      },
         "4l5m7n9opqrs1tuvw3xyza2b8c6d3efghij5k": {
         title: "Eats Ensemble",
         people: { status: "Personal Project", icon: "person" },
@@ -13,7 +38,7 @@ export const useMainStore = defineStore("projectStore", {
           "Eats Ensemble  is a website where you can find the perfect recipe based on your preferences and plan your meals for the week.",
         longDescription:
           "Eats Ensemble is a website where you can find the perfect recipe based on your preferences and plan your meals for the week. You can filter recipes based on dietary requirements, ingredients, and cooking time. You can also create meal plans and this automatically creates a shopping list as well.",
-        techniques: ["Nuxt", "Vue", "Bootstrap", "Pinia", "Python"],
+        techniques: ["Nuxt", "Vue", "JavaScript", "Bootstrap", "Pinia", "Python"],
         takeaway:
           "Learnt how to scrape data from websites using BeautifulSoup",
         note: "n/a",
@@ -107,7 +132,7 @@ export const useMainStore = defineStore("projectStore", {
           "Fash track is a website that was built during Culturehack 2024. <br> It aims to simplify job applications and provide mentorship opportunities.",
         longDescription:
           "FashTrack is a website built in Culturehack 2024 that aims to ease the job application process in the fashion industry. It contains a job tracker which displays the jobs available at the momenet. It also has a mentorship hub that gives the opportunity for users to interact with professionals in the industry.",
-        techniques: ["Nuxt", "Vue", "Bootstrap", "MongoDB"],
+        techniques: ["Nuxt", "Vue", "Bootstrap", "MongoDB", "JavaScript"],
         takeaway:
           "Learnt about Nuxt, Vue and Bootstrap and used these for the first time.",
         note: "only a prototype of the final website. Data used is made up.",

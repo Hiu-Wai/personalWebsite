@@ -84,7 +84,8 @@
                 <li>KCL HackTheLion 2025</li>
                 <li>UCL Minerva's Hack 2025</li>
                 <li>KCL Tech4Good Hackathon 2025</li>
-                <li>Royal Hackaway 2025</li>
+                <li>Royal Hackaway v8</li>
+                <li>FirstYearHack 2025</li>
               </ul>
             </div>
           </div>
