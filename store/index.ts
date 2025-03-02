@@ -3,6 +3,31 @@ import { defineStore } from "pinia";
 export const useMainStore = defineStore("projectStore", {
   state: () => ({
     projects: {
+      "4l5548dncmw733472dshfk92hssjqz2pey184y2": {
+        title: "God's speed",
+        people: { status: "Group Project", icon: "groups" },
+        type: { status: "Website", icon: "web" },
+        image: "/images/godspeedIcon.svg",
+        timeFrame: "March 2025",
+        shortDescription:
+          "GodSpeed is a website built during HackLondon 2025 that helps volunteering organisation find last minute volunteers. AI is used to build user profile and match user with the most fitting volunteering opportunity.",
+        longDescription:
+          "GodSpeed is a website built during HackLondon 2025 that allows spontaneous volunteering. User chats with the AI Chatbot to build the user profile. The AI then orders the volunteering opportunities based on matching score.",
+        techniques: ["Next", "Tailwind", "TypeScript", "MongoDB", "AI"],
+        takeaway:
+          "Learnt how to use Next for the first time.",
+        note: "n/a",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://godspeed.dylankainth.com/"
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/dylankainth/godspeedk",
+          },
+        ],
+      },
       "4l5548dncmw73s1tuvw3xyza2b8cflkayn0184y2": {
         title: "King's Quest",
         people: { status: "Group Project", icon: "groups" },
