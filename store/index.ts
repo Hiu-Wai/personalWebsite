@@ -35,9 +35,9 @@ export const useMainStore = defineStore("projectStore", {
         image: "/images/kingsQuest.png",
         timeFrame: "Feb 2025",
         shortDescription:
-          "King's Quest is a PWA that encourages users to join more societies by allowing user to log their attendance for each society event.",
+          "King's Quest is a PWA built during FirstYearHack 2025 that encourages users to join more societies by allowing user to log their attendance for each society event.",
         longDescription:
-          "King's Quest is a PWA that enables the user to log their attendance for each society event by asking them to take a picture during the event, which is then approved by a society committee member. There are leadership boards for each society, and based off this data, societies can hold exclusive events for active members.",
+          "King's Quest is a PWA built during FirstYearHack 2025 that enables the user to log their attendance for each society event by asking them to take a picture during the event, which is then approved by a society committee member. There are leadership boards for each society, and based off this data, societies can hold exclusive events for active members.",
         techniques: ["Nuxt", "JavaScript", "Tailwind", "MongoDB"],
         takeaway:
           "Learnt how to use MongoDB and fetch data from there.",
