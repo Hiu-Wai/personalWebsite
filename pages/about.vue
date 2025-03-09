@@ -87,6 +87,7 @@
                 <li>Royal Hackaway v8</li>
                 <li>KCL FirstYearHack 2025</li>
                 <li>HackLondon 2025</li>
+                <li>HackSprint 2025</li>
               </ul>
             </div>
           </div>
