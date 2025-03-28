@@ -3,6 +3,31 @@ import { defineStore } from "pinia";
 export const useMainStore = defineStore("projectStore", {
   state: () => ({
     projects: {
+      "7d9k2x6m8p1v3c4r5y9n2b6f1h8j3q7l4s": {
+        title: "Hoarders",
+        people: { status: "Personal Project", icon: "person" },
+        type: { status: "Website", icon: "web" },
+        image: "/images/shelf.svg",
+        timeFrame: "March 2025",
+        shortDescription:
+          "Hoarders is a dynamic collection-sharing platform that allows users to create, explore, and interact with curated collections of images, ideas, or inspirations.",
+        longDescription:
+          "Hoarders is a collection-sharing platform that enables users to create, showcase, and interact with curated collections of images or ideas. It features an intuitive interface, interactive elements like likes and comments, and smooth navigation through visually appealing carousels",
+        techniques: ["Next", "Tailwind", "TypeScript", "MongoDB", "Firebase"],
+        takeaway:
+          "n/a",
+        note: "n/a",
+        buttons: [
+          {
+            text: "Visit project deployment",
+            hyperlink: "https://show-and-tell-git-master-chloes-projects-aba87e7e.vercel.app/"
+          },
+          {
+            text: "Visit Github for project",
+            hyperlink: "https://github.com/dylankainth/godspeedk",
+          },
+        ],
+      },
       "4l5548dncmw733472dshfk92hssjqz2pey184y2": {
         title: "God's speed",
         people: { status: "Group Project", icon: "groups" },
