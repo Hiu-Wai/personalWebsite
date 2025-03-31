@@ -47,16 +47,19 @@
                 >Achievements</strong
               >
               <ul>
-                <li>Gold in Senior Maths Challenge 2023</li>
-                <li>Gold in Chemistry Olympiad 2024</li>
-                <li>Distinction in UK Bebras Challenge 2024</li>
+                <li>Gold in <a href = "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge">Senior Maths Challenge 2023</a></li>
+                <li>Gold in <a href = "https://edu.rsc.org/enrichment/uk-chemistry-olympiad">UK Chemistry Olympiad 2024</a></li>
+                <li>Distinction in <a href = "https://www.bebras.uk/">UK Bebras Challenge 2024</a></li>
                 <li>Shortlisted in UCL Minerva's Hack 2025</li>
+                <li>Won Judge's favourite robot in <a href = "https://unibots.uk/">Unibots 2025</a></li>
               </ul>
               <strong class="d-inline-block mb-2 text-primary-emphasis"
               >Leadership roles</strong>
               <ul>
                 <li>KCL HKPass Subcommitee 24-25</li>
-                <li>KCL WiSTEM Ambassador</li>
+                <li>KCL WiSTEM Ambassador 24-25</li>
+                <li>KCL Womxn in STEM Events Officer 25-26</li>
+                <li>KCL Women in Computer Science Co Events Officer 25-26</li>
               </ul>
             </div>
           </div>
@@ -88,6 +91,7 @@
                 <li>KCL FirstYearHack 2025</li>
                 <li>HackLondon 2025</li>
                 <li>HackSprint 2025</li>
+                <li>Unibots 2025</li>
               </ul>
             </div>
           </div>
