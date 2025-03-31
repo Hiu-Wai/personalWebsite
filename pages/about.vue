@@ -146,4 +146,11 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+a{
+  text-decoration: none;
+  color:#007bff;
+}
+a:hover{
+  color: #0059ff;
+}
 </style>
