@@ -114,11 +114,11 @@ function getIcon(iconKey) {
                     {{ project.techniques.join(", ") }}</span
                   >
                   <br />
-                  <i :class="(getIcon('takeaway'), fa - sm)" class="me-2"></i>
+                <!--   <i :class="(getIcon('takeaway'), fa - sm)" class="me-2"></i>
                   <span>Takeaways: {{ project.takeaway }}</span>
                   <br />
                   <i :class="(getIcon('note'), fa - sm)" class="me-2"></i>
-                  <span>Note: {{ project.note }}</span>
+                  <span>Note: {{ project.note }}</span> -->
                   <div class="justify-content-between">
                     <div class="button-group mt-4">
                       <a

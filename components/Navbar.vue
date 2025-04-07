@@ -67,7 +67,7 @@
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
   body{
-    font-size:23px;
+    font-size:22px;
   }
 
 }
@@ -75,7 +75,7 @@
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
   body{
-    font-size:26px;
+    font-size:23px;
   }
 }
 </style>
