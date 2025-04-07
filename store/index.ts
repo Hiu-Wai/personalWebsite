@@ -24,7 +24,7 @@ export const useMainStore = defineStore("projectStore", {
           },
           {
             text: "Visit Github for project",
-            hyperlink: "https://github.com/dylankainth/godspeedk",
+            hyperlink: "https://github.com/dylankainth/godspeed",
           },
         ],
       },
@@ -49,7 +49,7 @@ export const useMainStore = defineStore("projectStore", {
           },
           {
             text: "Visit Github for project",
-            hyperlink: "https://github.com/dylankainth/godspeedk",
+            hyperlink: "https://github.com/dylankainth/godspeed",
           },
         ],
       },
