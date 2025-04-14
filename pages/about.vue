@@ -4,7 +4,7 @@
       <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
         <div class="row">
           <div class="col-lg-6 px-0">
-            <h1 class="display-4 fst-italic">A little about me...</h1>
+            <h1 id = "typing-text" class="display-4 fst-italic"></h1>
             <div class="description">
               <p class="my-3">
                 I'm Chloe Ho (Hiu Wai Ho) and I am currently a computer science
@@ -215,6 +215,25 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    const text = "A little about me...";
+    let i = 0;
+    const target = document.getElementById("typing-text");
+    function typeWriter() {
+      if (i < text.length) {
+        target.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 75);
+      }
+    }
+    typeWriter();
+  },
+};
+</script>
+
 <style>
 .custom-img {
   height: auto;

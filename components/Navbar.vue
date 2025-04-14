@@ -33,8 +33,14 @@
 </template>
 
 <style>
+.navbar-brand:hover{
+  text-decoration: none;
+}
 .nav-link {
   color: #88ccf1;
+}
+.nav-link:hover{
+  text-decoration: none;
 }
 .nav-link.exact-active {
   color: #007bff;

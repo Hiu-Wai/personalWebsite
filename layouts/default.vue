@@ -7,20 +7,6 @@
   </div>
 </template>
 
-<!-- <script>
-import "bootstrap-icons/font/bootstrap-icons.css";
-
-import Navbar from "~/components/Navbar.vue";
-
-import { useHead } from 'unhead';
-
-
-export default {
-  components: {
-    Navbar,
-  },
-};
-</script> -->
 <script>
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "~/components/Navbar.vue";

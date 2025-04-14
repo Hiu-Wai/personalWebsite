@@ -2,9 +2,9 @@
   <div class="d-flex h-100 text-center text-white body">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
       <main class="px-3">
-        <h3>HELLO EVERYONE, I AM</h3>
-        <h1>CHLOE HO (HIU WAI HO)</h1>
-        <div class="hover-overlay">
+        <h3 id="typing-text-line1"></h3>
+        <h1 id="typing-text-line2" class="mb-2"></h1>
+        <div class="hover-overlay mb-3">
           <img
             class="bd-placeholder-img rounded-circle profile-pic"
             src="public\images\profile.jpeg"
@@ -122,6 +122,63 @@
   </div>
 </template>
 
+<script>
+import { gsap } from "gsap";
+
+export default {
+  mounted() {
+    const text1 = "HELLO EVERYONE, I AM";
+    const text2 = "CHLOE HO (HIU WAI HO)";
+    let i = 0;
+    let j = 0;
+
+    const line1 = document.getElementById("typing-text-line1");
+    const line2 = document.getElementById("typing-text-line2");
+
+    function typeLine1() {
+      if (i < text1.length) {
+        line1.innerHTML += text1.charAt(i);
+        i++;
+        setTimeout(typeLine1, 75);
+      } else {
+        setTimeout(typeLine2, 500);
+      }
+    }
+
+    function typeLine2() {
+      if (j < text2.length) {
+        line2.innerHTML += text2.charAt(j);
+        j++;
+        setTimeout(typeLine2, 75);
+      } else {
+        animateElements();
+      }
+    }
+
+    function animateElements() {
+      gsap.from(".profile-pic", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
+      });
+
+      gsap.from(".contact-details", {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out",
+      });
+    }
+
+    // Start typing animation
+    typeLine1();
+  },
+};
+</script>
+
+
 <style scoped>
 .profile-pic {
   width: 300px; /* Set your desired width */
@@ -200,5 +257,8 @@
 }
 .contact-details a {
   color: #007bff;
+}
+.contact-details a:hover {
+  color: #0056b3;
 }
 </style>
