@@ -1,173 +1,129 @@
 <script setup>
-import { useRoute } from "vue-router"; // To access the dynamic route parameter
+import { useRoute } from "vue-router";
 import { computed } from "vue";
-import { useMainStore } from "~/store/index"; // Import the store
+import { useMainStore } from "~/store/index";
 
-// Access the route to get the 'id' parameter
 const route = useRoute();
-const projectId = route.params.id; // Dynamic 'id' from URL
-
-// Access the store
+const projectId = route.params.id;
 const store = useMainStore();
 
-// Fetch the project based on the 'id'
 const project = computed(() => store.projects[projectId]);
 const icons = computed(() => store.icons);
 
 function getImageStyle() {
-  //Return specific background colour for the given ID
   return {
     backgroundColor:
       projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED",
   };
 }
+
 function getIcon(iconKey) {
   return icons.value[iconKey] || "";
 }
 </script>
+
 <template>
-  <div class="d-flex h-100 text-center text-white">
+  <div class="d-flex h-100 text-white text-center">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
       <div class="d-flex justify-content-center">
         <div
           id="carouselExampleIndicators"
-          class="carousel slide bg-dark"
+          class="carousel slide bg-dark rounded"
           data-bs-ride="carousel"
-          style="border-radius: 10px"
         >
           <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
+
           <div class="carousel-inner align-items-center" v-if="project">
+            <!-- Slide 1 -->
             <div class="carousel-item active">
               <div class="row centered-content">
                 <div class="col-md-7 text-container">
                   <h1>{{ project.title }}</h1>
-                  <div
-                    class="d-flex flex-column flex-md-row justify-content-between align-items-center brief-description"
-                  >
+
+                  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center brief-description my-3">
                     <div class="d-flex align-items-center mb-2 mb-md-0">
-                      <i
-                        :class="(getIcon(project.people.icon))"
-                        class="me-2"
-                      ></i>
-                      <span class="ml-2 ml-md-3 ml-lg-4">{{
-                        project.people.status
-                      }}</span>
+                      <i :class="getIcon(project.people.icon)" class="me-2"></i>
+                      <span>{{ project.people.status }}</span>
                     </div>
+
                     <div class="d-flex align-items-center mb-2 mb-md-0">
-                      <i
-                        :class="(getIcon(project.type.icon))"
-                        class="me-2"
-                      ></i>
-                      <span class="ml-2 ml-md-3 ml-lg-4">{{
-                        project.type.status
-                      }}</span>
+                      <i :class="getIcon(project.type.icon)" class="me-2"></i>
+                      <span>{{ project.type.status }}</span>
                     </div>
+
                     <div class="d-flex align-items-center mb-2 mb-md-0">
-                      <i
-                        :class="(getIcon('calendar'))"
-                        class="me-2"
-                      ></i>
-                      <span class="ml-2 ml-md-3 ml-lg-4">{{
-                        project.timeFrame
-                      }}</span>
+                      <i :class="getIcon('calendar')" class="me-2"></i>
+                      <span>{{ project.timeFrame }}</span>
                     </div>
                   </div>
-                  <br />
+
                   <p v-html="project.longDescription"></p>
                 </div>
-                <div class="col-lg-4">
-                  <div class="image-wrapper">
-                    <img
-                      :src="project.image"
-                      class="img-fluid project-image image-container"
-                      :style="getImageStyle()"
-                    />
-                  </div>
+
+                <div class="col-lg-4 image-container">
+                  <img
+                    :src="project.image"
+                    class="img-fluid project-image"
+                    :style="getImageStyle()"
+                    alt="Project Image"
+                  />
                 </div>
               </div>
             </div>
+
+            <!-- Slide 2 -->
             <div class="carousel-item">
               <div class="row centered-content">
-                <div class="col-md-7">
+                <div class="col-md-7 text-container">
                   <h1>{{ project.title }}</h1>
-                  <span
-                    ><i
-                      :class="(getIcon('language'), fa - sm)"
-                      class="me-2"
-                    ></i>
-                    Techniques used:
-                    {{ project.techniques.join(", ") }}</span
-                  >
-                  <br />
-                <!--   <i :class="(getIcon('takeaway'), fa - sm)" class="me-2"></i>
-                  <span>Takeaways: {{ project.takeaway }}</span>
-                  <br />
-                  <i :class="(getIcon('note'), fa - sm)" class="me-2"></i>
-                  <span>Note: {{ project.note }}</span> -->
-                  <div class="justify-content-between">
-                    <div class="button-group mt-4">
-                      <a
-                        v-for="button in project.buttons"
-                        :key="button.text"
-                        :href="button.hyperlink"
-                        class="btn btn-md btn-primary m-2 project-button"
-                      >
-                        {{ button.text }}
-                      </a>
-                      <NuxtLink to="/project">
-                        <button
-                          type="button"
-                          class="btn btn-md btn-primary m-2 project-button"
-                        >
-                          Look at other projects
-                        </button>
-                      </NuxtLink>
-                    </div>
+                  <p>
+                    <i :class="getIcon('language')" class="me-2"></i>
+                    Techniques used: {{ project.techniques.join(", ") }}
+                  </p>
+
+                  <div class="button-group mt-4">
+                    <a
+                      v-for="button in project.buttons"
+                      :key="button.text"
+                      :href="button.hyperlink"
+                      class="btn btn-md btn-primary m-2 project-button"
+                    >
+                      {{ button.text }}
+                    </a>
+
+                    <NuxtLink to="/project">
+                      <button class="btn btn-md btn-primary m-2 project-button">
+                        Look at other projects
+                      </button>
+                    </NuxtLink>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="image-wrapper">
-                    <img
-                      :src="project.image"
-                      class="img-fluid project-image"
-                      :style="getImageStyle()"
-                    />
-                  </div>
+
+                <div class="col-lg-4 image-container">
+                  <img
+                    :src="project.image"
+                    class="img-fluid project-image"
+                    :style="getImageStyle()"
+                    alt="Project Image"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div v-else><p>Project not found.</p></div>
-          <button
-            class="carousel-control-prev justify-content-between custom-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
+
+          <div v-else>
+            <p>Project not found.</p>
+          </div>
+
+          <button class="carousel-control-prev custom-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button
-            class="carousel-control-next justify-content-between custom-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
+
+          <button class="carousel-control-next custom-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -181,100 +137,75 @@ function getIcon(iconKey) {
 #carouselExampleIndicators {
   padding: 4rem;
   min-height: 53vh;
-  margin: auto;
   width: 80vw;
+  margin: auto;
 }
 
 .centered-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
-.centered-content .text-container {
+
+.text-container {
   text-align: center;
 }
-.centered-content .image-container img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+
+.image-container {
+  text-align: center;
 }
+
+.project-image {
+  width: 300px;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: inherit;
+  padding: 5px;
+  margin: 0 auto;
+}
+
 .btn-primary {
   background-color: #b0f2b4;
   color: #708189;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.btn-primary:hover {
   background-color: #bad7f2;
   color: #708189;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    padding: 1rem;
+    width: 95vw;
+  }
+
+  .centered-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
 @media (max-width: 576px) {
   .carousel-item {
     font-size: 14px;
-  };
-  .project-button{
+  }
+
+  .project-button {
     padding: 6px 12px;
     font-size: 14px;
   }
 }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) {
-  .carousel-item{
-    font-size: 15px;
-  }
-  .project-button{
-    padding: 8px 16px;
-    font-size: 15px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .carousel-item{
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  .project-button{
-    padding: 8px 16px;
-    font-size: 16px;
-  }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-  .carousel-item {
-    font-size: 18px;
-  }
-  .project-button{
-    padding: 8px 16px;
-    font-size: 16px;
-  }
-}
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
-  .carousel-item{
-    font-size: 24px;
-  }
-  .project-button{
-    padding: 9px 18px;
-    font-size: 24px;
-  }
-}
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   width: 5%;
-  padding-left: 0;
-  padding-right: 0;
-}
-.project-image{
-  height:auto;
-  width:100%;
 }
 </style>
