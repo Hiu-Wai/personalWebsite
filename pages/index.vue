@@ -2,8 +2,8 @@
   <div class="d-flex h-100 text-center text-white body">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
       <main class="px-3">
-        <h3 id="typing-text-line1"></h3>
-        <h1 id="typing-text-line2" class="mb-2"></h1>
+        <h3 id="typing-text-line1" class="gradient-text"></h3>
+        <h1 id="typing-text-line2" class="mb-2 gradient-text"></h1>
         <div class="hover-overlay mb-3">
           <img
             class="bd-placeholder-img rounded-circle profile-pic"
@@ -178,7 +178,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .profile-pic {
   width: 300px; /* Set your desired width */
@@ -260,5 +259,24 @@ export default {
 }
 .contact-details a:hover {
   color: #0056b3;
+}
+.gradient-text {
+  background: linear-gradient(to right, #9ff5ca, #e0c3fc, #8ec5fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradientShift 3s ease infinite;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
 }
 </style>

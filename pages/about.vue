@@ -219,7 +219,7 @@
 <script>
 export default {
   mounted() {
-    const text = "A little about me...";
+    const text = "A little bit about me...";
     let i = 0;
     const target = document.getElementById("typing-text");
     function typeWriter() {
