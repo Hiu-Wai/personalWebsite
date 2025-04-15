@@ -102,7 +102,7 @@ function getImageStyle(id) {
 
 .btn:hover {
   background-color: #cde7f7;
-  color: white;
+  color: #708189;
 }
 
 .bg-2 {
