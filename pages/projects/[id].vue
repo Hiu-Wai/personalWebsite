@@ -41,9 +41,9 @@ function getIcon(iconKey) {
             <div class="carousel-item active">
               <div class="row centered-content">
                 <div class="col-md-7 text-container">
-                  <h1>{{ project.title }}</h1>
+                  <h1 class="fade-slide-up">{{ project.title }}</h1>
 
-                  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center brief-description my-3">
+                  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center brief-description my-3 fade-in-delayed">
                     <div class="d-flex align-items-center mb-2 mb-md-0">
                       <i :class="getIcon(project.people.icon)" class="me-2"></i>
                       <span>{{ project.people.status }}</span>
@@ -60,13 +60,13 @@ function getIcon(iconKey) {
                     </div>
                   </div>
 
-                  <p v-html="project.longDescription"></p>
+                  <p v-html="project.longDescription" class="fade-in-delayed"></p>
                 </div>
 
                 <div class="col-lg-4 image-container">
                   <img
                     :src="project.image"
-                    class="img-fluid project-image"
+                    class="img-fluid project-image fade-zoom"
                     :style="getImageStyle()"
                     alt="Project Image"
                   />
@@ -176,7 +176,7 @@ function getIcon(iconKey) {
 .btn-primary:hover {
   background-color: #cde7f7;
   color: #708189;
-  transform: scale(1.10);
+  transform: scale(1.2);
   text-decoration: none;
 }
 
@@ -212,4 +212,64 @@ function getIcon(iconKey) {
 .carousel-control-prev {
   width: 5%;
 }
+
+.fade-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeInDelayed 0.8s ease-out forwards;
+  animation-delay: 0.4s; /* adjust as needed */
+}
+p.fade-in-delayed {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInDelayed {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.fade-zoom {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeZoomIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeZoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.project-button {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeSlideUp 0.6s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.project-button:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.project-button:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+
+
 </style>

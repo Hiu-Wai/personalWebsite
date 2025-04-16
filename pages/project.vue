@@ -1,11 +1,13 @@
 <template>
   <div class="d-flex h-100 text-white body">
-    <div class="cover-container d-flex w-100 min-vh-100 p-3 mx-auto flex-column">
+    <div
+      class="cover-container d-flex w-100 min-vh-100 p-3 mx-auto flex-column"
+    >
       <!-- Header -->
       <div class="d-flex justify-content-center">
         <div class="p-5 mb-4 rounded-3 text-center bg-2 w-75 shadow-lg">
           <div class="container-fluid py-5">
-            <h1 class="display-4 fw-bold">Projects</h1>
+            <h1 class="stroke-reveal display-4 fw-bold">Projects</h1>
           </div>
         </div>
       </div>
@@ -15,9 +17,11 @@
         <div class="album py-5">
           <div class="container text-center">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-              <div class="col" v-for="(project, id) in projects" :key="id">
+              <div class="col fade-in" v-for="(project, id) in projects" :key="id">
                 <div class="card h-100 shadow-sm border-0">
-                  <h2 class="text-uppercase px-3 pt-3 text-dark">{{ project.title }}</h2>
+                  <h2 class="text-uppercase px-3 pt-3 text-dark">
+                    {{ project.title }}
+                  </h2>
                   <div class="hover-slide rounded overflow-hidden">
                     <img
                       class="project-image card-img-top img-fluid custom-size pulse-on-touch rounded"
@@ -27,8 +31,13 @@
                     />
                   </div>
                   <div class="card-body d-flex flex-column">
-                    <p class="card-text text-dark" v-html="project.shortDescription"></p>
-                    <div class="btn-group mt-auto d-flex justify-content-center">
+                    <p
+                      class="card-text text-dark"
+                      v-html="project.shortDescription"
+                    ></p>
+                    <div
+                      class="btn-group mt-auto d-flex justify-content-center"
+                    >
                       <NuxtLink :to="'/projects/' + id">
                         <button
                           type="button"
@@ -90,7 +99,7 @@ function getImageStyle(id) {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .btn {
@@ -103,6 +112,7 @@ function getImageStyle(id) {
 .btn:hover {
   background-color: #cde7f7;
   color: #708189;
+  transform: scale(1.1);
 }
 
 .bg-2 {
@@ -119,12 +129,53 @@ h2 {
   font-weight: 600;
 }
 
+.stroke-reveal {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+}
+
+.stroke-reveal::after {
+  content: 'Projects';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  color: white;
+  white-space: nowrap;
+  animation: revealText 1.5s ease forwards;
+}
+
+@keyframes revealText {
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
 @media (max-width: 576px) {
   .project-button {
     padding: 0.5rem 1rem;
     font-size: 14px;
   }
-  .project-image{
+  .project-image {
     height: 200px;
     width: 200px;
   }
@@ -147,7 +198,8 @@ h2 {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
