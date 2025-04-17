@@ -166,19 +166,19 @@ function getIcon(iconKey) {
   margin: 0 auto;
 }
 
-.btn-primary {
+/* .btn-primary {
   background-color: #b0f2b4;
   box-shadow: 0 10px 20px rgba(191, 191, 191, 0.312);
   border: #e3e3e3;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
+} */
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   background-color: #cde7f7;
   color: #708189;
   transform: scale(1.2);
   text-decoration: none;
-}
+} */
 
 @media (max-width: 768px) {
   #carouselExampleIndicators {
@@ -256,10 +256,21 @@ p.fade-in-delayed {
 }
 
 .project-button {
+  background-color: #b0f2b4;
+  box-shadow: 0 10px 20px rgba(191, 191, 191, 0.312);
+  border: #e3e3e3;
   opacity: 0;
   transform: translateY(10px);
   animation: fadeSlideUp 0.6s ease-out forwards;
   animation-delay: 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Added transform to the transition */
+}
+
+.project-button:hover {
+  background-color: #cde7f7;
+  color: #708189;
+  transform: scale(1.2);
+  text-decoration: none;
 }
 
 .project-button:nth-child(2) {

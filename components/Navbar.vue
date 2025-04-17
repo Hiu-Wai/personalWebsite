@@ -40,6 +40,7 @@
   color: #88ccf1;
 }
 .nav-link:hover{
+  color: #cacdef;
   text-decoration: none;
 }
 .nav-link.exact-active {

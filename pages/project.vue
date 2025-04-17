@@ -179,6 +179,9 @@ h2 {
     height: 200px;
     width: 200px;
   }
+  .stroke-fill {
+    animation: fadeInUp 1s ease forwards;
+  }
 }
 
 @media (hover: hover) {
