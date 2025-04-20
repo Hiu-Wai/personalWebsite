@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex h-100 body">
     <div class="container-fluid text-start">
-      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-about">
         <div class="row">
           <div class="col-lg-6 px-0">
             <h1 id="typing-text" class="display-4 fst-italic"></h1>
@@ -30,7 +30,7 @@
       <div class="row mb-2 about">
         <div class="col-md-6">
           <div
-            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
+            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-about"
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis"
@@ -131,7 +131,7 @@
         </div>
         <div class="col-md-6">
           <div
-            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-body-secondary"
+            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-about"
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis"
@@ -291,6 +291,9 @@ export default {
 </script>
 
 <style>
+.bg-about{
+  background-color:#f8e9f0;
+}
 .custom-img {
   height: auto;
   width: 350px;
@@ -369,7 +372,7 @@ a:hover {
 
 /* Accordion header button */
 .accordion-button {
-  background-color: #e9edf2;
+  background-color: #f8e9f0;
   font-weight: 600;
   color: #2c2f33;
   padding: 14px 20px;
@@ -386,7 +389,7 @@ a:hover {
 
 /* Button hover and focus */
 .accordion-button:hover {
-  background-color: #efebf1;
+  background-color: #f8e8f0;
   color: #1c1e21;
 }
 
