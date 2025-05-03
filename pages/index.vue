@@ -15,7 +15,7 @@
           /><title></title><rect width="100%" height="100%" fill="#777"></rect>
           <div class="mask"></div>
         </div>
-        <h3>
+        <h3 class = "description">
           I'm an undergraduate computer science student who is interested in
           learning new things.
         </h3>
@@ -156,14 +156,24 @@ export default {
     }
 
     function animateElements() {
-      gsap.from(".profile-pic", {
+      // Animate the profile picture and contact details
+      const tl = gsap.timeline();
+          // Start typing animation
+
+      tl.from(".profile-pic", {
+        opacity: 0,
+        y: 50,
+        duration: 0.7,
+        ease: "power2.out",
+      });
+      tl.from(".description", {
         opacity: 0,
         y: 50,
         duration: 1,
+        delay: 0.5,
         ease: "power2.out",
       });
-
-      gsap.from(".contact-details", {
+      tl.from(".contact-details", {
         opacity: 0,
         y: 100,
         duration: 1,
@@ -171,9 +181,8 @@ export default {
         ease: "power2.out",
       });
     }
-
-    // Start typing animation
     typeLine1();
+
   },
 };
 </script>

@@ -121,6 +121,7 @@
                         <li>
                           KCL Women in Computer Science Co Events Officer 25-26
                         </li>
+                        <li>KCL Tech Events Secretary 25-26</li>
                       </ul>
                     </div>
                   </div>
