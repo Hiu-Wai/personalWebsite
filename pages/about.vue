@@ -138,10 +138,10 @@
               <strong class="d-inline-block mb-2 text-primary-emphasis"
                 >Community & Events</strong
               >
-              <p class="mb-2 text-body-secondary">
+              <h3 class="mb-4 text-body-secondary fs-4">
                 Outside of my academic work, I'm actively involved in various
                 student societies that align with my interests and values.
-              </p>
+              </h3>
               <div class="accordion" id="aboutAccordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSocieties">
@@ -274,6 +274,9 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
     const text = "A little bit about me...";
@@ -287,13 +290,73 @@ export default {
       }
     }
     typeWriter();
+    const tl = gsap.timeline();
+    // GSAP Animations on mount
+
+    tl.from(".description", {
+      opacity: 0,
+      y: 40,
+      duration: 1,
+      delay: 1.2,
+      ease: "power2.out",
+    });
+
+    tl.from(".custom-img", {
+      opacity: 0,
+      x: 100,
+      duration: 1.2,
+      ease: "power2.out",
+    });
+
+    gsap.utils.toArray(".accordion-item").forEach((item, i) => {
+      gsap.from(item, {
+        scrollTrigger: {
+          trigger: item,
+          start: "top 90%",
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.6,
+        ease: "power2.out",
+        delay: i * 0.1,
+      });
+    });
+    gsap.utils.toArray(".about strong").forEach((header, i) => {
+      gsap.from(header, {
+        scrollTrigger: {
+          trigger: header,
+          start: "top 95%",
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: "power2.out",
+        delay: i * 0.1,
+      });
+    });
+    gsap.utils.toArray(".about h3").forEach((header, i) => {
+      gsap.from(header, {
+        scrollTrigger: {
+          trigger: header,
+          start: "top 95%",
+          toggleActions: "play none none none",
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: "power2.out",
+        delay: i * 0.2,
+      });
+    });
   },
 };
 </script>
 
 <style>
-.bg-about{
-  background-color:#f8e9f0;
+.bg-about {
+  background-color: #f8e9f0;
 }
 .custom-img {
   height: auto;
