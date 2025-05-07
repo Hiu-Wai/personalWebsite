@@ -1,27 +1,3 @@
-<script setup>
-import { useRoute } from "vue-router";
-import { computed } from "vue";
-import { useMainStore } from "~/store/index";
-
-const route = useRoute();
-const projectId = route.params.id;
-const store = useMainStore();
-
-const project = computed(() => store.projects[projectId]);
-const icons = computed(() => store.icons);
-
-function getImageStyle() {
-  return {
-    backgroundColor:
-      projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED",
-  };
-}
-
-function getIcon(iconKey) {
-  return icons.value[iconKey] || "";
-}
-</script>
-
 <template>
   <div class="d-flex h-100 text-white text-center">
     <div class="cover-container d-flex vw-100 vh-90 p-3 mx-auto flex-column">
@@ -133,6 +109,30 @@ function getIcon(iconKey) {
   </div>
 </template>
 
+<script setup>
+import { useRoute } from "vue-router";
+import { computed } from "vue";
+import { useMainStore } from "~/store/index";
+
+const route = useRoute();
+const projectId = route.params.id;
+const store = useMainStore();
+
+const project = computed(() => store.projects[projectId]);
+const icons = computed(() => store.icons);
+
+function getImageStyle() {
+  return {
+    backgroundColor:
+      projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED",
+  };
+}
+
+function getIcon(iconKey) {
+  return icons.value[iconKey] || "";
+}
+</script>
+
 <style scoped>
 #carouselExampleIndicators {
   padding: 4rem;
@@ -215,7 +215,7 @@ function getIcon(iconKey) {
 .fade-in-delayed {
   opacity: 0;
   animation: fadeInDelayed 0.8s ease-out forwards;
-  animation-delay: 0.4s; /* adjust as needed */
+  animation-delay: 0.4s; 
 }
 p.fade-in-delayed {
   animation-delay: 0.6s;
@@ -226,7 +226,6 @@ p.fade-in-delayed {
     opacity: 1;
   }
 }
-
 
 .fade-zoom {
   opacity: 0;
@@ -266,7 +265,4 @@ p.fade-in-delayed {
 .project-button:nth-child(3) {
   animation-delay: 0.7s;
 }
-
-
-
 </style>
