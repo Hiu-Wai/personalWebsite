@@ -109,28 +109,40 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import { useRoute } from "vue-router";
-import { computed } from "vue";
 import { useMainStore } from "~/store/index";
 
-const route = useRoute();
-const projectId = route.params.id;
-const store = useMainStore();
-
-const project = computed(() => store.projects[projectId]);
-const icons = computed(() => store.icons);
-
-function getImageStyle() {
-  return {
-    backgroundColor:
-      projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED",
-  };
-}
-
-function getIcon(iconKey) {
-  return icons.value[iconKey] || "";
-}
+export default {
+  data() {
+    return {
+      route: useRoute(),
+      store: useMainStore(),
+    };
+  },
+  computed: {
+    projectId() {
+      return this.route.params.id;
+    },
+    project() {
+      return this.store.projects[this.projectId];
+    },
+    icons() {
+      return this.store.icons;
+    },
+  },
+  methods: {
+    getImageStyle() {
+      return {
+        backgroundColor:
+          this.projectId === "n0erng2887b0v0luu579" ? "#00838f" : "#C7FFED",
+      };
+    },
+    getIcon(iconKey) {
+      return this.icons[iconKey] || "";
+    },
+  },
+};
 </script>
 
 <style scoped>
