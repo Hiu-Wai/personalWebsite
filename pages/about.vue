@@ -15,7 +15,7 @@
                 satisfaction felt afterwards. But I am eager to explore the
                 other different branches of computer science as it is such a big
                 field. Feel free to contact me using the contact details
-                mentioned in the home page!!
+                mentioned in the <NuxtLink to="/" class = "no-decoration">home page</NuxtLink>!!
               </p>
             </div>
           </div>
@@ -363,6 +363,13 @@ export default {
   width: 350px;
   object-fit: contain;
   overflow: hidden;
+}
+.no-decoration {
+  text-decoration: none !important;
+  color: #007bff;
+}
+.no-decoration:hover {
+  color: #0056b3;
 }
 
 @media (max-width: 576px) {
