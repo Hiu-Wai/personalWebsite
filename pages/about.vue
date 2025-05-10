@@ -15,7 +15,8 @@
                 satisfaction felt afterwards. But I am eager to explore the
                 other different branches of computer science as it is such a big
                 field. Feel free to contact me using the contact details
-                mentioned in the <NuxtLink to="/" class = "no-decoration">home page</NuxtLink>!!
+                mentioned in the
+                <NuxtLink to="/" class="no-decoration">home page</NuxtLink>!!
               </p>
             </div>
           </div>
@@ -280,76 +281,57 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
     const text = "A little bit about me...";
-    let i = 0;
     const target = document.getElementById("typing-text");
+    let i = 0;
+
     function typeWriter() {
       if (i < text.length) {
-        target.innerHTML += text.charAt(i);
+        target.textContent += text.charAt(i);
         i++;
         setTimeout(typeWriter, 75);
       }
     }
     typeWriter();
+
     const tl = gsap.timeline();
-    // GSAP Animations on mount
 
     tl.from(".description", {
       opacity: 0,
       y: 40,
       duration: 1,
-      delay: 1.2,
+      delay: 0.6,
       ease: "power2.out",
-    });
+    }).from(
+      ".custom-img",
+      {
+        opacity: 0,
+        x: 100,
+        duration: 1.2,
+        ease: "power2.out",
+      },
+      "-=0.8"
+    ); // Overlap animations slightly
 
-    tl.from(".custom-img", {
-      opacity: 0,
-      x: 100,
-      duration: 1.2,
-      ease: "power2.out",
-    });
+    const fadeInUp = (selector, delayStep = 0.1) => {
+      gsap.utils.toArray(selector).forEach((el, i) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+          opacity: 0,
+          y: 30,
+          duration: 0.8,
+          ease: "power2.out",
+          delay: i * delayStep,
+        });
+      });
+    };
 
-    gsap.utils.toArray(".accordion-item").forEach((item, i) => {
-      gsap.from(item, {
-        scrollTrigger: {
-          trigger: item,
-          start: "top 90%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.6,
-        ease: "power2.out",
-        delay: i * 0.1,
-      });
-    });
-    gsap.utils.toArray(".about strong").forEach((header, i) => {
-      gsap.from(header, {
-        scrollTrigger: {
-          trigger: header,
-          start: "top 95%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: "power2.out",
-        delay: i * 0.1,
-      });
-    });
-    gsap.utils.toArray(".about h3").forEach((header, i) => {
-      gsap.from(header, {
-        scrollTrigger: {
-          trigger: header,
-          start: "top 95%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: "power2.out",
-        delay: i * 0.2,
-      });
-    });
+    fadeInUp(".accordion-item", 0.1);
+    fadeInUp(".about strong", 0.1);
+    fadeInUp(".about h3", 0.2);
   },
 };
 </script>
