@@ -123,6 +123,7 @@
                           KCL Women in Computer Science Co Events Officer 25-26
                         </li>
                         <li>KCL Tech Events Secretary 25-26</li>
+                        <li>KCL Womxn in STEM Head of Events 26-27</li>
                       </ul>
                     </div>
                   </div>
@@ -133,135 +134,242 @@
         </div>
         <div class="col-md-6">
           <div
-            class="row row row-eq-height g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-about"
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-about"
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary-emphasis"
                 >Community & Events</strong
               >
-              <h3 class="mb-4 text-body-secondary fs-4">
-                Outside of my academic work, I'm actively involved in various
-                student societies that align with my interests and values.
-              </h3>
-              <div class="accordion" id="aboutAccordion">
+
+              <!-- Societies pills -->
+              <p class="section-eyebrow">Societies</p>
+              <div class="society-pills mb-3">
+                <span class="society-pill pill-wistem">Womxn in STEM</span>
+                <span class="society-pill pill-tech">KCL Tech</span>
+                <span class="society-pill pill-wics">Womxn in CS</span>
+              </div>
+
+              <hr class="section-divider" />
+
+              <!-- Organised events -->
+              <p class="section-eyebrow">Organised &amp; helped run</p>
+              <div class="accordion" id="organisedAccordion">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSocieties">
+                  <h2 class="accordion-header" id="headingWiSTEM">
                     <button
                       class="accordion-button"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseSocieties"
+                      data-bs-target="#collapseWiSTEM"
                       aria-expanded="true"
-                      aria-controls="collapseSocieties"
+                      aria-controls="collapseWiSTEM"
                     >
-                      Participating societies
+                      <span class="acc-title-row">
+                        Womxn in STEM
+                        <span class="event-count">14 events</span>
+                      </span>
+                      <span class="soc-badge badge-wistem">WiSTEM</span>
                     </button>
                   </h2>
                   <div
-                    id="collapseSocieties"
+                    id="collapseWiSTEM"
                     class="accordion-collapse collapse show"
-                    aria-labelledby="headingSocieties"
-                    data-bs-parent="#aboutAccordion"
+                    aria-labelledby="headingWiSTEM"
+                    data-bs-parent="#organisedAccordion"
                   >
                     <div class="accordion-body">
                       <ul>
-                        <li>Womxn in STEM</li>
-                        <li>Womxn in CS</li>
-                        <li>KCL Tech</li>
-                        <li>KCL Abacus</li>
+                        <li>Welcome Games and Chill with WiSTEM</li>
+                        <li>Members' Meet &amp; Greet</li>
+                        <li>Mentorship Scheme Orientation / Launch</li>
+                        <li>Cross-Society Networking Event</li>
+                        <li>Rewriting the Code (RTC) Workshop</li>
+                        <li>
+                          End of Year Meet and Greet: Alumni and Friends of
+                          WiSTEM
+                        </li>
+                        <li>Events Student Ambassador Workshop</li>
+                        <li>Makerspace Event</li>
+                        <li>Galentine's Crafting</li>
+                        <li>Student Ambassador Consolidation Workshop</li>
+                        <li>
+                          International Women's Day + Closing of Mentorship
+                          Scheme
+                        </li>
+                        <li>
+                          Coding Social Collab with Competitive Programming Soc
+                        </li>
+                        <li>STEM Ball</li>
+                        <li>Charity Bake Sale with other Womxn in Societies</li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class="accordion" id="mainEventsAccordion">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingMainEvents">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseMainEvents"
-                        aria-expanded="true"
-                        aria-controls="collapseMainEvents"
-                      >
-                        Participated Events
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseMainEvents"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingMainEvents"
-                      data-bs-parent="#mainEventsAccordion"
-                    >
-                      <div class="accordion-body">
-                        <div class="accordion" id="eventsByYearSubAccordion">
-                          <!-- Events in 2025 -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSub2025">
-                              <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseSub2025"
-                                aria-expanded="false"
-                                aria-controls="collapseSub2025"
-                              >
-                                Events in 2025
-                              </button>
-                            </h2>
-                            <div
-                              id="collapseSub2025"
-                              class="accordion-collapse collapse"
-                              aria-labelledby="headingSub2025"
-                              data-bs-parent="#eventsByYearSubAccordion"
-                            >
-                              <div class="accordion-body">
-                                <ul>
-                                  <li>KCL HackTheLion 2025</li>
-                                  <li>UCL Minerva's Hack 2025</li>
-                                  <li>KCL Tech4Good Hackathon 2025</li>
-                                  <li>Royal Hackaway v8</li>
-                                  <li>KCL FirstYearHack 2025</li>
-                                  <li>HackLondon 2025</li>
-                                  <li>HackSprint 2025</li>
-                                  <li>Unibots 2025</li>
-                                  <li>Encode AI Hackathon 2025</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
 
-                          <!-- Events in 2024 -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSub2024">
-                              <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseSub2024"
-                                aria-expanded="false"
-                                aria-controls="collapseSub2024"
-                              >
-                                Events in 2024
-                              </button>
-                            </h2>
-                            <div
-                              id="collapseSub2024"
-                              class="accordion-collapse collapse"
-                              aria-labelledby="headingSub2024"
-                              data-bs-parent="#eventsByYearSubAccordion"
-                            >
-                              <div class="accordion-body">
-                                <ul>
-                                  <li>KCL CultureHack 2024</li>
-                                  <li>UCL Holistic AI Hackathon 2024</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of sub-accordion -->
-                      </div>
+                <div class="accordion-item mt-2">
+                  <h2 class="accordion-header" id="headingKCLTech">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseKCLTech"
+                      aria-expanded="false"
+                      aria-controls="collapseKCLTech"
+                    >
+                      <span class="acc-title-row">
+                        KCL Tech
+                        <span class="event-count">2 events</span>
+                      </span>
+                      <span class="soc-badge badge-tech">Tech</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseKCLTech"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingKCLTech"
+                    data-bs-parent="#organisedAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>KCL Tech Meet &amp; Greet</li>
+                        <li>KCL Tech Summit</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <h2 class="accordion-header" id="headingWiCS">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseWiCS"
+                      aria-expanded="false"
+                      aria-controls="collapseWiCS"
+                    >
+                      <span class="acc-title-row">
+                        Womxn in CS
+                        <span class="event-count">1 event</span>
+                      </span>
+                      <span class="soc-badge badge-wics">WiCS</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseWiCS"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingWiCS"
+                    data-bs-parent="#organisedAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Galentine's Candle Making</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="section-divider" />
+
+              <!-- Participated events -->
+              <p class="section-eyebrow">Attended as participant</p>
+              <div class="accordion" id="participatedAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingPart2026">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsePart2026"
+                      aria-expanded="false"
+                      aria-controls="collapsePart2026"
+                    >
+                      <span class="acc-title-row">
+                        2026
+                        <span class="event-count">1 event</span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsePart2026"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingPart2026"
+                    data-bs-parent="#participatedAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>IC Hack 2026</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <h2 class="accordion-header" id="headingPart2025">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsePart2025"
+                      aria-expanded="false"
+                      aria-controls="collapsePart2025"
+                    >
+                      <span class="acc-title-row">
+                        2025
+                        <span class="event-count">9 events</span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsePart2025"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingPart2025"
+                    data-bs-parent="#participatedAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>KCL HackTheLion 2025</li>
+                        <li>UCL Minerva's Hack 2025</li>
+                        <li>KCL Tech4Good Hackathon 2025</li>
+                        <li>Royal Hackaway v8</li>
+                        <li>KCL FirstYearHack 2025</li>
+                        <li>HackLondon 2025</li>
+                        <li>HackSprint 2025</li>
+                        <li>Unibots 2025</li>
+                        <li>Encode AI Hackathon 2025</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <h2 class="accordion-header" id="headingPart2024">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsePart2024"
+                      aria-expanded="false"
+                      aria-controls="collapsePart2024"
+                    >
+                      <span class="acc-title-row">
+                        2024
+                        <span class="event-count">2 events</span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsePart2024"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingPart2024"
+                    data-bs-parent="#participatedAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>KCL CultureHack 2024</li>
+                        <li>UCL Holistic AI Hackathon 2024</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -309,7 +417,7 @@ export default {
         duration: 1.2,
         ease: "power2.out",
       },
-      "-=0.8"
+      "-=0.8",
     ); // Overlap animations slightly
 
     const fadeInUp = (selector, delayStep = 0.1) => {
@@ -431,9 +539,17 @@ a:hover {
   padding: 14px 20px;
   font-size: 1rem;
   border-radius: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-
+.accordion-button::after {
+  margin-left: 12px; /* or 0 if you don't need spacing */
+}
 /* Active/opened state */
 .accordion-button:not(.collapsed) {
   background-color: #d2e3ff;
@@ -473,6 +589,85 @@ a:hover {
 .accordion-body li {
   margin-bottom: 8px;
 }
+.acc-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1; 
+  min-width: 0;
+}
+
+.soc-badge {
+  flex-shrink: 0;
+}
+/* Society pills */
+.section-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 0.5rem;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #e8d8e0;
+  margin: 1rem 0;
+}
+
+.society-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.society-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.pill-wistem { background: #f6d7e2; color: #72243E; }
+.pill-tech   { background: #E6F1FB; color: #0C447C; }
+.pill-wics   { background: #E1F5EE; color: #085041; }
+
+/* Accordion header layout */
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acc-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-count {
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: #EEEDFE;
+  color: #3C3489;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* Society badges inside accordion header */
+.soc-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 12px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.badge-wistem { background: #f6d7e2; color: #72243E; }
+.badge-tech   { background: #E6F1FB; color: #0C447C; }
+.badge-wics   { background: #E1F5EE; color: #085041; }
 
 /* Responsive tweaks */
 @media (max-width: 576px) {
