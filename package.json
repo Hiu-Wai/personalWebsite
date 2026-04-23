@@ -14,7 +14,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "gsap": "^3.12.7",
-    "nuxt": "^3.14.1592",
+    "nuxt": "^3.16.0",
     "nuxt3-vuex-module": "^1.1.2",
     "vue": "latest",
     "vue-observe-visibility": "^1.0.0",
